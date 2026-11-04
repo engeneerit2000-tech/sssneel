@@ -1,0 +1,38 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - stg
+
+jobs:
+
+- job: Git_Pull_WalletPlatform
+  pool: 
+    name: 'snel-stg'
+  steps:
+  - bash: |
+      cd /snel/stg/backend/walletplatform/data/
+      git fetch --all
+      git reset --hard stg
+      git pull --force
+    displayName: 'Git_Pull_WalletPlatform'
+
+####################################################################################
+- job: Deploy_WalletPlatform
+  dependsOn: Git_Pull_WalletPlatform
+  timeoutInMinutes: 240
+  pool: 
+    name: 'snel-stg'
+  steps:
+
+  - bash: |
+        docker compose -f /snel/stg/build/docker-compose.yaml build --no-cache walletplatform
+        docker compose -f /snel/stg/build/docker-compose.yaml up --force-recreate -d walletplatform
+    name: WalletPlatform
+    displayName: 'WalletPlatform'
+
+    

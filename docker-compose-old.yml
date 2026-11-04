@@ -1,0 +1,132 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:16
+    hostname: postgresql
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: snel_wallet
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - net
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - postgres_pg:/usr/lib/postgresql
+      - ./docker/postgres-init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres -d snel_wallet" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  keycloak:
+    image: bitnami/keycloak:24.0.4
+    # command: ["start-dev", "--features=admin-fine-grained-authz"]
+    hostname: keycloak
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+      # - KEYCLOAK_USER=admin
+      # - KEYCLOAK_PASSWORD=admin
+      - KC_DB=postgres
+      - KC_DB_URL=jdbc:postgresql://postgres:5432/keycloak_db
+      - KC_DB_USERNAME=postgres
+      - KC_DB_PASSWORD=postgres
+    ports:
+      - "8080:8080"
+    # volumes:
+    #   - keycloak_data:/opt/keycloak/data
+    depends_on:
+      - postgres
+    networks:
+      - net
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.16.2
+    hostname: elasticsearch
+    ports:
+      - "9200:9200"
+    #      - "9300:9300"
+    environment:
+      - bootstrap.memory_lock=true
+      - discovery.type=single-node
+      - cluster.routing.allocation.disk.threshold_enabled=false
+      - xpack.security.enabled=true
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - ELASTIC_USERNAME=elastic
+      - ELASTIC_PASSWORD=elastic
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    restart: always
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -f http://localhost:9200/_cat/health | grep -q green",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    networks:
+      - net
+  elastic-apm:
+    scale: 1
+    image: docker.elastic.co/apm/apm-server:7.16.2
+    hostname: elastic-apm
+    ports:
+      - 8200:8200
+    environment:
+      - output.elasticsearch.hosts=["elasticsearch:9200"]
+      - strict.perms=false
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./docker/apm-config/apm-server.docker.yml:/usr/share/apm-server/apm-server.yml
+    networks:
+      - net
+  kibana:
+    scale: 1
+    image: docker.elastic.co/kibana/kibana:7.16.2
+    hostname: kibana
+    ports:
+      - 5601:5601
+    expose:
+      - "5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=elastic
+    depends_on:
+      - elasticsearch
+    networks:
+      - net
+  minio:
+    image: bitnami/minio:2025.3.12
+    hostname: minio
+    # environment:
+    # - MINIO_ROOT_USER=admin
+    # - MINIO_ROOT_PASSWORD=admin
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    networks:
+      - net
+    volumes:
+      - minio_data:/bitnami/minio/data
+networks:
+  net:
+
+volumes:
+  esdata:
+  keycloak_data:
+  postgres:
+  postgres_pg:
+  postgres_data:
+  rabbitmq_data:
+  minio_data:

@@ -1,0 +1,14 @@
+/.idea/
+
+# Ignore all obj folders (build artifacts) recursively
+**/obj/
+**/obj/**
+
+# Ignore all bin folders (build outputs) recursively
+**/bin/
+**/bin/**
+/.vs/
+
+**.user
+*.DotSettings.user
+/docs

@@ -1,0 +1,28 @@
+namespace SNEL.WalletPlatform.Application.Lookups.Models.Output;
+
+public sealed record AllLookupsOutputModel(
+    IReadOnlyCollection<LookupItemOutputModel> Countries,
+    IReadOnlyCollection<RegionLookupOutputModel> Regions,
+    IReadOnlyCollection<CityLookupOutputModel> Cities,
+    IReadOnlyCollection<AreaLookupOutputModel> Areas,
+    IReadOnlyCollection<LookupWithActiveOutputModel> Genders,
+    IReadOnlyCollection<LookupWithActiveOutputModel> Channels,
+    IReadOnlyCollection<CurrencyLookupOutputModel> Currencies,
+    IReadOnlyCollection<LookupWithActiveOutputModel> PartnerTypes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> PartnerStatuses,
+    IReadOnlyCollection<LookupWithActiveOutputModel> BillerStatuses,
+    IReadOnlyCollection<LookupWithActiveOutputModel> BillingCategories,
+    IReadOnlyCollection<LookupWithActiveOutputModel> BillingServiceTypes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> ContactTypes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> PaymentCategories,
+    IReadOnlyCollection<LookupWithActiveOutputModel> Centers,
+    IReadOnlyCollection<LookupWithActiveOutputModel> CompletionModes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> ConfirmationModes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> ConfirmationTypes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> PaymentInitModes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> PaymentMethodPurposes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> JournalLineTypes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> AccountTypes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> PaymentTypes,
+    IReadOnlyCollection<LookupWithActiveOutputModel> PaymentStatuses,
+    IReadOnlyCollection<CampaignAudienceGroupLookupOutputModel> CampaignAudienceGroups);

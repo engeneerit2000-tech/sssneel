@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Customer.NotFound" xml:space="preserve">
+    <value>Customer '{0}' was not found.</value>
+  </data>
+  <data name="Customer.ProfileNotFound" xml:space="preserve">
+    <value>Customer profile was not found for the current user.</value>
+  </data>
+  <data name="User.PhoneNumberAlreadyExists" xml:space="preserve">
+    <value>Phone number '{0}' is already registered.</value>
+  </data>
+  <data name="User.EmailAlreadyExists" xml:space="preserve">
+    <value>Email '{0}' is already registered.</value>
+  </data>
+  <data name="User.NationalNoAlreadyExists" xml:space="preserve">
+    <value>National number '{0}' is already registered.</value>
+  </data>
+  <data name="Lookups.AreaInvalid" xml:space="preserve">
+    <value>Area '{0}' does not exist.</value>
+  </data>
+  <data name="Identity.UsernameAlreadyExists" xml:space="preserve">
+    <value>username '{0}' already exists.</value>
+  </data>
+  <data name="Identity.EmailAlreadyExists" xml:space="preserve">
+    <value>Login email '{0}' already exists.</value>
+  </data>
+  <data name="Common.UnexpectedError" xml:space="preserve">
+    <value>An unexpected error occurred.</value>
+  </data>
+  <data name="Billing.Inquiry.InvalidRequest" xml:space="preserve">
+    <value>Biller code, service code, and billing reference are required.</value>
+  </data>
+  <data name="Billing.Inquiry.ServiceNotFound" xml:space="preserve">
+    <value>Billing service '{1}' was not found for biller '{0}'.</value>
+  </data>
+  <data name="Billing.Inquiry.NotSupported" xml:space="preserve">
+    <value>Billing inquiry is not enabled for biller '{0}' and service '{1}'.</value>
+  </data>
+  <data name="Billing.Inquiry.ConnectorNotConfigured" xml:space="preserve">
+    <value>No inquiry connector is configured for biller '{0}'.</value>
+  </data>
+  <data name="Billing.Inquiry.NoInvoicesFound" xml:space="preserve">
+    <value>No invoices were found for billing reference '{0}'.</value>
+  </data>
+  <data name="Billing.Inquiry.SubscriptionNotFound" xml:space="preserve">
+    <value>Customer subscription '{0}' was not found.</value>
+  </data>
+  <data name="Billing.Inquiry.ServiceIdNotFound" xml:space="preserve">
+    <value>Billing service '{0}' was not found.</value>
+  </data>
+  <data name="Billing.Inquiry.ServiceCodeNotFound" xml:space="preserve">
+    <value>Billing service with biller code '{0}' and billing service code '{1}' was not found.</value>
+  </data>
+  <data name="Billing.Inquiry.InvoiceRefRequired" xml:space="preserve">
+    <value>Invoice reference is required.</value>
+  </data>
+  <data name="Billing.Inquiry.InvoiceNotFound" xml:space="preserve">
+    <value>Invoice '{0}' was not found.</value>
+  </data>
+  <data name="Payment.InvoiceIdentifierRequired" xml:space="preserve">
+    <value>At least one invoice id or invoice reference is required.</value>
+  </data>
+  <data name="Payment.AmbiguousInvoiceIdentifiers" xml:space="preserve">
+    <value>Provide either invoice ids or invoice references, not both.</value>
+  </data>
+  <data name="Billing.CustomActions.InvalidRequest" xml:space="preserve">
+    <value>Biller code, service code are required.</value>
+  </data>
+  <data name="Billing.CustomActions.ServiceNotFound" xml:space="preserve">
+    <value>Billing service '{1}' was not found for biller '{0}'.</value>
+  </data>
+  <data name="Billing.CustomActions.NotSupported" xml:space="preserve">
+    <value>Billing custom actions is not enabled for biller '{0}' and service '{1}'.</value>
+  </data>
+  <data name="Billing.CustomActions.ConnectorNotConfigured" xml:space="preserve">
+    <value>No custom actions connector is configured for biller '{0}'.</value>
+  </data>
+  <data name="Billing.CustomActions.NoInvoicesFound" xml:space="preserve">
+    <value>No invoices were found for billing reference '{0}'.</value>
+  </data>
+  <data name="Billing.CustomActions.SubscriptionNotFound" xml:space="preserve">
+    <value>Customer subscription '{0}' was not found.</value>
+  </data>
+  <data name="Billing.CustomActions.ServiceIdNotFound" xml:space="preserve">
+    <value>Billing service '{0}' was not found.</value>
+  </data>
+  <data name="Payment.Initialize.InvalidRequest" xml:space="preserve">
+    <value>Currency code, amount, and payment method code are required.</value>
+  </data>
+  <data name="Payment.Initialize.MethodNotFound" xml:space="preserve">
+    <value>Payment method '{0}' was not found.</value>
+  </data>
+  <data name="Payment.Initialize.MethodInactive" xml:space="preserve">
+    <value>Payment method '{0}' is not active.</value>
+  </data>
+  <data name="Payment.Initialize.WalletAccountNotFound" xml:space="preserve">
+    <value>No wallet account was found for currency '{0}'.</value>
+  </data>
+  <data name="Payment.Initialize.WalletAccountNotActive" xml:space="preserve">
+    <value>The wallet account is not active.</value>
+  </data>
+  <data name="Payment.Initialize.CurrencyNotSupported" xml:space="preserve">
+    <value>Currency '{0}' is not supported by payment method '{1}'.</value>
+  </data>
+  <data name="Payment.Initialize.AmountBelowMin" xml:space="preserve">
+    <value>Amount is below the minimum allowed value ({0}).</value>
+  </data>
+  <data name="Payment.Initialize.AmountAboveMax" xml:space="preserve">
+    <value>Amount is above the maximum allowed value ({0}).</value>
+  </data>
+  <data name="Payment.Initialize.ChannelNotConfigured" xml:space="preserve">
+    <value>Payment channel '{0}' is not configured or inactive.</value>
+  </data>
+  <data name="Payment.Initialize.InvalidConfig" xml:space="preserve">
+    <value>Payment method '{0}' has an invalid configuration.</value>
+  </data>
+  <data name="Payment.Provider.CodeAlreadyExists" xml:space="preserve">
+    <value>A payment provider with code '{0}' already exists.</value>
+  </data>
+  <data name="Payment.Provider.PartnerAlreadyHasProvider" xml:space="preserve">
+    <value>A payment provider already exists for partner with id '{0}'.</value>
+  </data>
+  <data name="Payment.Provider.NotFound" xml:space="preserve">
+    <value>Payment provider with id '{0}' was not found.</value>
+  </data>
+  <data name="Payment.Provider.CreateSuccess" xml:space="preserve">
+    <value>Payment provider created successfully.</value>
+  </data>
+  <data name="CustomerFavorites.FavoriteTypeNotFound" xml:space="preserve">
+    <value>Favorite type not found.</value>
+  </data>
+  <data name="CustomerFavorites.SubscriptionNotFound" xml:space="preserve">
+    <value>Favorite subscription not found.</value>
+  </data>
+  <data name="CustomerFavorites.SubscriptionNotBelongToCustomer" xml:space="preserve">
+    <value>Subscription does not belong to the customer.</value>
+  </data>
+  <data name="CustomerFavorites.AlreadyExists" xml:space="preserve">
+    <value>Customer favorite already exists.</value>
+  </data>
+  <data name="Journal.PaymentVoucher.CreateSuccess" xml:space="preserve">
+    <value>Payment voucher created successfully.</value>
+  </data>
+  <data name="Journal.ReceiptVoucher.CreateSuccess" xml:space="preserve">
+    <value>Receipt voucher created successfully.</value>
+  </data>
+  <data name="Journal.CreditNote.CreateSuccess" xml:space="preserve">
+    <value>Credit note created successfully.</value>
+  </data>
+  <data name="Journal.DebitNote.CreateSuccess" xml:space="preserve">
+    <value>Debit note created successfully.</value>
+  </data>
+  <data name="Journal.ManualJournal.CreateSuccess" xml:space="preserve">
+    <value>Manual journal created successfully.</value>
+  </data>
+  <data name="Journal.OpenBalance" xml:space="preserve">
+    <value>Open Balance</value>
+  </data>
+  <data name="CloudToken.CreateSuccess" xml:space="preserve">
+    <value>Cloud messaging token saved successfully.</value>
+  </data>
+  <data name="Customer.Create.Success" xml:space="preserve">
+    <value>Customer created successfully.</value>
+  </data>
+  <data name="CustomerFavorites.Create.Success" xml:space="preserve">
+    <value>Customer favorite created successfully.</value>
+  </data>
+  <data name="CustomerSubscription.Create.Success" xml:space="preserve">
+    <value>Customer subscription created successfully.</value>
+  </data>
+  <data name="Billing.Service.Create.Success" xml:space="preserve">
+    <value>Billing service created successfully.</value>
+  </data>
+  <data name="User.Create.Success" xml:space="preserve">
+    <value>User created successfully.</value>
+  </data>
+  <data name="Account.Order.ReorderedSuccessfully" xml:space="preserve">
+    <value>Accounts order updated successfully.</value>
+  </data>
+  <data name="Auth.PasswordUpdatedSuccessfully" xml:space="preserve">
+    <value>Password updated successfully.</value>
+  </data>
+  <data name="Auth.MobileUpdatedSuccessfully" xml:space="preserve">
+    <value>Mobile number updated successfully.</value>
+  </data>
+  <data name="Customer.ProfileUpdatedSuccessfully" xml:space="preserve">
+    <value>Customer profile updated successfully.</value>
+  </data>
+  <data name="OtpChallenge.Generated.Success" xml:space="preserve">
+    <value>OTP generated and sent successfully.</value>
+  </data>
+  <data name="Customer.Update.Success" xml:space="preserve">
+    <value>Customer updated successfully.</value>
+  </data>
+  <data name="Customer.Status.Update.Success" xml:space="preserve">
+    <value>Customer status updated successfully.</value>
+  </data>
+  <data name="CustomerFavorites.Favorite.Set.Success" xml:space="preserve">
+    <value>Customer favorite set successfully.</value>
+  </data>
+  <data name="CustomerFavorites.Favorite.AlreadySet.Success" xml:space="preserve">
+    <value>Customer favorite already set.</value>
+  </data>
+  <data name="CustomerFavorites.Favorite.Unset.Success" xml:space="preserve">
+    <value>Customer favorite removed successfully.</value>
+  </data>
+  <data name="CustomerFavorites.Favorite.AlreadyUnset.Success" xml:space="preserve">
+    <value>Customer favorite was not set.</value>
+  </data>
+  <data name="CustomerSubscription.Update.Success" xml:space="preserve">
+    <value>Customer subscription updated successfully.</value>
+  </data>
+  <data name="Billing.Service.Update.Success" xml:space="preserve">
+    <value>Billing service updated successfully.</value>
+  </data>
+  <data name="User.Update.Success" xml:space="preserve">
+    <value>User updated successfully.</value>
+  </data>
+  <data name="Auth.Delete.Success" xml:space="preserve">
+    <value>Account deleted successfully.</value>
+  </data>
+  <data name="CloudToken.Delete.Success" xml:space="preserve">
+    <value>Cloud messaging token deleted successfully.</value>
+  </data>
+  <data name="CustomerSubscription.Delete.Success" xml:space="preserve">
+    <value>Customer subscription deleted successfully.</value>
+  </data>
+  <data name="User.Delete.Success" xml:space="preserve">
+    <value>User deleted successfully.</value>
+  </data>
+</root>

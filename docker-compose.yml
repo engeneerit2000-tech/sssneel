@@ -1,0 +1,194 @@
+version: "3.8"
+services:
+  vault:
+    image: hashicorp/vault:1.20.4
+    container_name: snel-vault
+    hostname: snel-vault
+    restart: unless-stopped
+    ports:
+      - "8200:8200"
+    environment:
+      VAULT_ADDR: "http://127.0.0.1:8200"
+      APP_TOKEN: "snel-wallet-local-token"
+      VAULT_ENVIRONMENT: "local"
+
+      ConnectAfrica__DefaultUnit: "112904"
+      ConnectAfrica__Password: "PPpp@@@###987654321"
+      ConnectAfrica__Username: "MAGNALINK"
+      ConnectAfrica__ValidationCode: "XObNQKPo25"
+      ConnectionStrings__DefaultConnection: "Server=localhost;Port=5432;Database=snel_wallet;User Id=postgres;Password=postgres;Pooling=true;MaxPoolSize=50;Timeout=30;CommandTimeout=60;"
+      ElasticConfiguration__Password: "elastic"
+      ElasticConfiguration__Username: "elastic"
+      Keycloak__Admin__ClientSecret: "IWP5nMKsDdDzEviE21vXEqxNYOYIbWyU"
+      Keycloak__Admin__Password: "rM03fm0oajEBQ4m8gqy"
+      Keycloak__Admin__Username: "admin"
+      Keycloak__credentials__secret: "OigedWOwM4OopLXiqkGc70ycutBHiZ4h"
+      Webhooks__Interswitch__Secret: "yVB1kgV9yzfl4wo71kvx"
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - snel-vault-data:/vault/file
+      - snel-vault-bootstrap-data:/bootstrap
+      - ./docker/hashicorp/config/vault.hcl:/vault/config/vault.hcl:ro
+      - ./docker/hashicorp/scripts/vault-entrypoint.sh:/scripts/vault-entrypoint.sh:ro
+    entrypoint:
+      - /bin/sh
+      - /scripts/vault-entrypoint.sh
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >
+          vault status >/dev/null 2>&1;
+          CODE=$$?;
+          [ $$CODE -eq 0 ] || [ $$CODE -eq 2 ]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    networks:
+      - net
+
+  postgres:
+    image: postgres:16
+    hostname: postgresql
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: snel_wallet
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - net
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - postgres_pg:/usr/lib/postgresql
+      - ./docker/postgres-init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres -d snel_wallet" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  keycloak:
+    scale: 0
+    image: keycloak/keycloak:26.5
+    # command: ["start-dev", "--features=admin-fine-grained-authz"]
+    hostname: keycloak
+    command: ["start-dev"]
+    environment:
+      - KC_BOOTSTRAP_ADMIN_USERNAME=admin
+      - KC_BOOTSTRAP_ADMIN_PASSWORD=admin
+      # - KEYCLOAK_USER=admin
+      # - KEYCLOAK_PASSWORD=admin
+      - KC_DB=postgres
+      - KC_DB_URL=jdbc:postgresql://postgres:5432/keycloak_db
+      - KC_DB_USERNAME=postgres
+      - KC_DB_PASSWORD=postgres
+    ports:
+      - "8080:8080"
+    # volumes:
+    #   - keycloak_data:/opt/keycloak/data
+    depends_on:
+      - postgres
+    networks:
+      - net
+
+  elasticsearch:
+    scale: 0
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.16.2
+    hostname: elasticsearch
+    ports:
+      - "9200:9200"
+    #      - "9300:9300"
+    environment:
+      - bootstrap.memory_lock=true
+      - discovery.type=single-node
+      - cluster.routing.allocation.disk.threshold_enabled=false
+      - xpack.security.enabled=true
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - ELASTIC_USERNAME=elastic
+      - ELASTIC_PASSWORD=elastic
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    restart: always
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -f http://localhost:9200/_cat/health | grep -q green",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    networks:
+      - net
+  elastic-apm:
+    scale: 0
+    image: docker.elastic.co/apm/apm-server:7.16.2
+    hostname: elastic-apm
+    ports:
+      - 8201:8200
+    environment:
+      - output.elasticsearch.hosts=["elasticsearch:9200"]
+      - strict.perms=false
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./docker/apm-config/apm-server.docker.yml:/usr/share/apm-server/apm-server.yml
+    networks:
+      - net
+  kibana:
+    scale: 0
+    image: docker.elastic.co/kibana/kibana:7.16.2
+    hostname: kibana
+    ports:
+      - 5601:5601
+    expose:
+      - "5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=elastic
+    depends_on:
+      - elasticsearch
+    networks:
+      - net
+  # minio:
+  #   image: bitnami/minio:2025.3.12
+  #   hostname: minio
+  #   # environment:
+  #   # - MINIO_ROOT_USER=admin
+  #   # - MINIO_ROOT_PASSWORD=admin
+  #   ports:
+  #     - "9000:9000"
+  #     - "9001:9001"
+  #   networks:
+  #     - net
+  #   volumes:
+  #     - minio_data:/bitnami/minio/data
+  gotenberg:
+    hostname: gotenberg
+    image: gotenberg/gotenberg:8.27
+    ports:
+      - "3000:3000"
+    networks:
+      - net
+networks:
+  net:
+
+volumes:
+  snel-vault-data:
+    name: snel-vault-data
+  snel-vault-bootstrap-data:
+    name: snel-vault-bootstrap-data
+  esdata:
+  keycloak_data:
+  postgres:
+  postgres_pg:
+  postgres_data:
+  rabbitmq_data:
+  minio_data:

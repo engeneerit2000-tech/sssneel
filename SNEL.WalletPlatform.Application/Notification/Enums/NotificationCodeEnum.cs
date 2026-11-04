@@ -1,0 +1,15 @@
+﻿namespace SNEL.WalletPlatform.Application.Notification.Enums;
+
+public enum NotificationCodeEnum
+{
+    OTP = 1,
+    PROFILE_CHANGE_MOBILE_NUMBER = 2,
+    PAYMENT_INVOICE_SUCCESS = 3,
+    PAYMENT_TOPUP_SUCSESS = 4,
+    PROFILE_CREATED = 5,
+    PROFILE_PASSWORD_CHANGED = 6,
+    PAYMENT_TOPUP_FAILED = 7,
+    NEW_BILL_GENERATED = 8,
+    PAYMENT_REMINDER = 9,
+    CAMPAIGN_ANNOUNCEMENT = 10,
+}

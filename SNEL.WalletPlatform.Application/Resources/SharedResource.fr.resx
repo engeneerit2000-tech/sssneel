@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Customer.NotFound" xml:space="preserve">
+    <value>Client '{0}' introuvable.</value>
+  </data>
+  <data name="Customer.ProfileNotFound" xml:space="preserve">
+    <value>Le profil client est introuvable pour l'utilisateur courant.</value>
+  </data>
+  <data name="User.PhoneNumberAlreadyExists" xml:space="preserve">
+    <value>Le numéro de téléphone '{0}' est déjà enregistré.</value>
+  </data>
+  <data name="User.MobileNo.MustNotContainSpaces" xml:space="preserve">
+    <value>Le numéro de mobile ou le nom d'utilisateur ne doit pas contenir d'espaces.</value>
+  </data>
+  <data name="User.MobileNo.InvalidLength" xml:space="preserve">
+    <value>Le numéro de mobile ou le nom d'utilisateur doit comporter entre 3 et 30 caractères.</value>
+  </data>
+  <data name="User.EmailAlreadyExists" xml:space="preserve">
+    <value>L'adresse e-mail '{0}' est déjà enregistrée.</value>
+  </data>
+  <data name="User.NationalNoAlreadyExists" xml:space="preserve">
+    <value>Le numéro national '{0}' est déjà enregistré.</value>
+  </data>
+  <data name="Lookups.AreaInvalid" xml:space="preserve">
+    <value>La zone '{0}' n'existe pas.</value>
+  </data>
+  <data name="Lookups.GenderInvalid" xml:space="preserve">
+    <value>Le genre '{0}' n'existe pas.</value>
+  </data>
+  <data name="Identity.UsernameAlreadyExists" xml:space="preserve">
+    <value>Le nom d'utilisateur de connexion '{0}' existe déjà.</value>
+  </data>
+  <data name="Identity.EmailAlreadyExists" xml:space="preserve">
+    <value>L'e-mail de connexion '{0}' existe déjà.</value>
+  </data>
+  <data name="Common.UnexpectedError" xml:space="preserve">
+    <value>Une erreur inattendue s'est produite.</value>
+  </data>
+  <data name="Billing.Inquiry.InvalidRequest" xml:space="preserve">
+    <value>Le code du fournisseur, le code du service et la référence de facturation sont requis.</value>
+  </data>
+  <data name="Billing.Inquiry.ServiceNotFound" xml:space="preserve">
+    <value>Le service de facturation '{1}' est introuvable pour le fournisseur '{0}'.</value>
+  </data>
+  <data name="Billing.Inquiry.NotSupported" xml:space="preserve">
+    <value>L'interrogation des factures n'est pas activée pour le fournisseur '{0}' et le service '{1}'.</value>
+  </data>
+  <data name="Billing.Inquiry.ConnectorNotConfigured" xml:space="preserve">
+    <value>Aucun connecteur d'interrogation n'est configuré pour le fournisseur '{0}'.</value>
+  </data>
+  <data name="Billing.Inquiry.NoInvoicesFound" xml:space="preserve">
+    <value>Aucune facture n'a été trouvée pour la référence de facturation '{0}'.</value>
+  </data>
+  <data name="Billing.Inquiry.SubscriptionNotFound" xml:space="preserve">
+    <value>L'abonnement client '{0}' est introuvable.</value>
+  </data>  
+  <data name="Billing.Inquiry.ServiceIdNotFound" xml:space="preserve">
+    <value>Le service de facturation '{0}' est introuvable.</value>
+  </data>
+  <data name="Billing.Inquiry.ServiceCodeNotFound" xml:space="preserve">
+    <value>Le service de facturation associé au code de facturier '{0}' et au code de service de facturation '{1}' est introuvable.</value>
+  </data>
+  <data name="Billing.Inquiry.InvoiceRefRequired" xml:space="preserve">
+    <value>La référence de facture est requise.</value>
+  </data>
+  <data name="Billing.Inquiry.InvoiceNotFound" xml:space="preserve">
+    <value>La facture '{0}' est introuvable.</value>
+  </data>
+  <data name="Payment.InvoiceIdentifierRequired" xml:space="preserve">
+    <value>Au moins un identifiant ou une référence de facture est requis.</value>
+  </data>
+  <data name="Payment.AmbiguousInvoiceIdentifiers" xml:space="preserve">
+    <value>Fournissez soit des identifiants de facture, soit des références de facture, pas les deux.</value>
+  </data>
+  <data name="Billing.CustomActions.InvalidRequest" xml:space="preserve">
+    <value>Le code du fournisseur, le code du service sont requis.</value>
+  </data>
+  <data name="Billing.CustomActions.ServiceNotFound" xml:space="preserve">
+    <value>Le service de facturation '{1}' est introuvable pour le fournisseur '{0}'.</value>
+  </data>
+  <data name="Billing.CustomActions.NotSupported" xml:space="preserve">
+    <value>Les actions personnalisées de facturation ne sont pas activées pour le facturier '{0}' et le service '{1}'.</value>
+  </data>
+  <data name="Billing.CustomActions.ConnectorNotConfigured" xml:space="preserve">
+    <value>Aucun connecteur d'interrogation n'est configuré pour le fournisseur '{0}'.</value>
+  </data>
+  <data name="Billing.CustomActions.NoInvoicesFound" xml:space="preserve">
+    <value>Aucune facture n'a été trouvée pour la référence de facturation '{0}'.</value>
+  </data>
+  <data name="Billing.CustomActions.SubscriptionNotFound" xml:space="preserve">
+    <value>L'abonnement client '{0}' est introuvable.</value>
+  </data>
+  <data name="Billing.CustomActions.ServiceIdNotFound" xml:space="preserve">
+    <value>Le service de facturation '{0}' est introuvable.</value>
+  </data>
+  <data name="Billing.Service.CodeAlreadyExists" xml:space="preserve">
+    <value>Un service de facturation avec le code '{0}' existe déjà pour ce facturier.</value>
+  </data>
+  <data name="Billing.Service.DuplicateCurrencies" xml:space="preserve">
+    <value>Les devises en double ne sont pas autorisées pour le même service de facturation. Doublons : {0}.</value>
+  </data>
+  <data name="Billing.Service.Delete.BlockedByReferences" xml:space="preserve">
+    <value>Impossible de supprimer le service de facturation car il est lié à des factures ou des abonnements.</value>
+  </data>
+  <data name="Billing.Service.BankAccount.Required" xml:space="preserve">
+    <value>L’identifiant du compte bancaire est requis pour la devise du service de facturation.</value>
+  </data>
+  <data name="Billing.Service.BankAccount.NotFound" xml:space="preserve">
+    <value>Le compte bancaire avec l’ID '{0}' est introuvable.</value>
+  </data>
+  <data name="Billing.Service.BankAccount.InvalidType" xml:space="preserve">
+    <value>Le compte '{0}' n’est pas de type BANK.</value>
+  </data>
+  <data name="Billing.Apply.IdentifierRequired" xml:space="preserve">
+    <value>Exactement un seul identifiant parmi paymentId, internalRef ou externalRef doit être fourni.</value>
+  </data>
+  <data name="Billing.Apply.PaymentNotFound" xml:space="preserve">
+    <value>Le paiement '{0}' est introuvable.</value>
+  </data>
+  <data name="Billing.Apply.PaymentNotCompleted" xml:space="preserve">
+    <value>Le paiement '{0}' n'est pas terminé.</value>
+  </data>
+  <data name="Billing.Apply.NoEligibleItems" xml:space="preserve">
+    <value>Le paiement '{0}' n'a aucun élément de facture éligible à appliquer.</value>
+  </data>
+  <data name="Billing.Apply.ConnectorNotConfigured" xml:space="preserve">
+    <value>Aucun connecteur d'application n'est configuré pour le fournisseur '{0}'.</value>
+  </data>
+  <data name="Billing.Apply.FailedForBiller" xml:space="preserve">
+    <value>L'application du paiement au fournisseur '{0}' a échoué.</value>
+  </data>
+  <data name="Billing.Apply.AtLeastOnePaymentIdRequired" xml:space="preserve">
+    <value>Au moins un identifiant de paiement doit être fourni.</value>
+  </data>
+  <data name="Billing.Apply.AtLeastOneValidPaymentIdRequired" xml:space="preserve">
+    <value>Au moins un identifiant de paiement valide doit être fourni.</value>
+  </data>
+  <data name="Billing.Apply.SnelSettingsInvalid" xml:space="preserve">
+    <value>Les paramètres du fournisseur SNEL sont absents ou invalides.</value>
+  </data>
+  <data name="Billing.Apply.SnelInsertFailed" xml:space="preserve">
+    <value>L'insertion d'application SNEL a échoué.</value>
+  </data>
+  <data name="Default.InternalServerError" xml:space="preserve">
+    <value>Erreur interne du serveur, veuillez réessayer plus tard.</value>
+  </data>
+  <data name="Api.Success.Created" xml:space="preserve">
+    <value>Créé avec succès.</value>
+  </data>
+  <data name="Api.Success.Ok" xml:space="preserve">
+    <value>Succès.</value>
+  </data>
+  <data name="Api.Success.Completed" xml:space="preserve">
+    <value>Requête terminée avec succès.</value>
+  </data>
+  <data name="Payment.Initialize.InvalidRequest" xml:space="preserve">
+    <value>Le code devise, le montant et le code méthode de paiement sont requis.</value>
+  </data>
+  <data name="Payment.Initialize.MethodNotFound" xml:space="preserve">
+    <value>La méthode de paiement '{0}' est introuvable.</value>
+  </data>
+  <data name="Payment.Initialize.MethodInactive" xml:space="preserve">
+    <value>La méthode de paiement '{0}' n'est pas active.</value>
+  </data>
+  <data name="Payment.Initialize.WalletAccountNotFound" xml:space="preserve">
+    <value>Aucun compte portefeuille n'a été trouvé pour la devise '{0}'.</value>
+  </data>
+  <data name="Payment.Initialize.WalletAccountNotActive" xml:space="preserve">
+    <value>Le compte portefeuille n'est pas actif.</value>
+  </data>
+  <data name="Payment.Initialize.CurrencyNotSupported" xml:space="preserve">
+    <value>La devise '{0}' n'est pas prise en charge par la méthode de paiement '{1}'.</value>
+  </data>
+  <data name="Payment.Initialize.AmountBelowMin" xml:space="preserve">
+    <value>Le montant est inférieur à la valeur minimale autorisée ({0}).</value>
+  </data>
+  <data name="Payment.Initialize.AmountAboveMax" xml:space="preserve">
+    <value>Le montant est supérieur à la valeur maximale autorisée ({0}).</value>
+  </data>
+  <data name="Payment.Initialize.ChannelNotConfigured" xml:space="preserve">
+    <value>Le canal de paiement '{0}' n'est pas configuré ou inactif.</value>
+  </data>
+  <data name="Payment.Initialize.InvalidConfig" xml:space="preserve">
+    <value>La méthode de paiement '{0}' a une configuration de invalide.</value>
+  </data>
+  <data name="Payment.Method.NotFound" xml:space="preserve">
+    <value>La méthode de paiement avec l'id '{0}' est introuvable.</value>
+  </data>
+  <data name="Payment.Method.CodeAlreadyExists" xml:space="preserve">
+    <value>Une méthode de paiement avec le code '{0}' existe déjà.</value>
+  </data>
+  <data name="Payment.Method.Incompatible" xml:space="preserve">
+    <value>Configuration de méthode de paiement incompatible pour '{0}'.</value>
+  </data>
+  <data name="Payment.Method.Currency.DuplicateCurrencies" xml:space="preserve">
+    <value>Les devises en double ne sont pas autorisées pour la même méthode de paiement. Doublons : {0}.</value>
+  </data>
+  <data name="CustomerSubscription.NotFound" xml:space="preserve">
+    <value>L'abonnement client avec l'ID '{0}' est introuvable.</value>
+  </data>
+  <data name="CustomerSubscription.AlreadyExists" xml:space="preserve">
+    <value>Un abonnement existe déjà pour ce client avec le service de facturation '{0}' et la référence '{1}'.</value>
+  </data>
+  <data name="CustomerSubscription.AreaCodeRequired" xml:space="preserve">
+    <value>Le code zone est obligatoire.</value>
+  </data>
+  <data name="CustomerSubscription.AreaCodeInvalid" xml:space="preserve">
+    <value>Le code zone n'est pas valide.</value>
+  </data>
+  <data name="CustomerSubscription.SubscriptionNumberRequired" xml:space="preserve">
+    <value>Le numéro d'abonnement est obligatoire.</value>
+  </data>
+  <data name="CustomerSubscription.SubscriptionNumberInvalid" xml:space="preserve">
+    <value>Le numéro d'abonnement doit comporter de 1 à 9 chiffres.</value>
+  </data>
+  <data name="CustomerSubscription.InvalidSubscriptionNumber" xml:space="preserve">
+    <value>Numéro d'abonnement invalide {0}</value>
+  </data>
+  <data name="CustomerSubscription.Confirmation" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir ajouter ce compteur « {0} » au client « {1} » en tant qu'abonnement ?</value>
+  </data>
+  <data name="Account.NotFound" xml:space="preserve">
+    <value>Le compte avec l'ID '{0}' est introuvable.</value>
+  </data>
+  <data name="Account.OrdersUpdateItemsRequired" xml:space="preserve">
+    <value>Au moins une entrée d'ordre de compte est requise.</value>
+  </data>
+  <data name="CloudToken.NotFound" xml:space="preserve">
+    <value>Le jeton cloud de l’utilisateur n’existe pas.</value>
+  </data>
+  <data name="UnAuthorizedDefaultMessage" xml:space="preserve">
+    <value>L’utilisateur n’est pas autorisé.</value>
+  </data>
+  <data name="OtpChallenge.CannontBeConsumed" xml:space="preserve">
+    <value>L'OTP ne peut pas être consommé</value>
+  </data>
+  <data name="OtpChallenge.VerificationFailed" xml:space="preserve">
+    <value>La vérification OTP a échoué</value>
+  </data>
+  <data name="OtpChallenge.CannontBeVerified" xml:space="preserve">
+    <value>L'OTP ne peut pas être vérifié</value>
+  </data>
+  <data name="OtpChallenge.Expired" xml:space="preserve">
+    <value>L'OTP a expiré</value>
+  </data>
+  <data name="OtpChallenge.NotFound" xml:space="preserve">
+    <value>L'OTP non trouvé</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="User.InvalidPassword" xml:space="preserve">
+    <value>Mot de passe invalide</value>
+  </data>
+	<data name="Required" xml:space="preserve">
+    <value>Requis '{0}'</value>
+  </data>
+  <data name="Partner.NotFound" xml:space="preserve">
+    <value>Partenaire non trouvé</value>
+  </data>
+  <data name="Partner.Delete.BlockedByReferences" xml:space="preserve">
+    <value>Suppression impossible car le partenaire lié est encore référencé par d'autres enregistrements.</value>
+  </data>
+  <data name="Customer.Delete.BlockedByReferences" xml:space="preserve">
+    <value>Suppression impossible : le client est lié à des paiements, abonnements, favoris ou écritures comptables.</value>
+  </data>
+  <data name="Customer.Delete.Success" xml:space="preserve">
+    <value>Client supprimé avec succès.</value>
+  </data>
+  <data name="Payment.NotFound" xml:space="preserve">
+    <value>Paiement introuvable.</value>
+  </data>
+  <data name="Payment.NotInitiated" xml:space="preserve">
+    <value>Le paiement n’a pas été initié correctement.</value>
+  </data>
+  <data name="Payment.StatusNotPending" xml:space="preserve">
+    <value>Payment was not initiated appropriately</value>
+  </data>
+  <data name="Payment.Cancel.NotAllowed" xml:space="preserve">
+    <value>Le paiement ne peut pas etre annule car il est deja dans un statut final.</value>
+  </data>
+  <data name="Payment.Cancel.LockConflict" xml:space="preserve">
+    <value>Une autre operation traite deja ce paiement. Veuillez reessayer dans un instant. PaymentId : {0}</value>
+  </data>
+  <data name="Payment.Cancel.InvalidFinalStatus" xml:space="preserve">
+    <value>Statut final de paiement invalide pour cette opération.</value>
+  </data>
+  <data name="Payment.ManualComplete.PlatformOnly" xml:space="preserve">
+    <value>Seul l'administrateur de la plateforme peut finaliser manuellement les paiements.</value>
+  </data>
+  <data name="Payment.ManualApply.PlatformOnly" xml:space="preserve">
+    <value>Seul l'administrateur de la plateforme peut appliquer manuellement les paiements.</value>
+  </data>
+  <data name="Payment.ManualReconcile.PlatformOnly" xml:space="preserve">
+    <value>Seul l'administrateur de la plateforme peut rapprocher manuellement les paiements POI.</value>
+  </data>
+  <data name="Payment.Id.Required" xml:space="preserve">
+    <value>L'identifiant du paiement est obligatoire.</value>
+  </data>
+  <data name="Payment.ExternalRef.Required" xml:space="preserve">
+    <value>La reference externe est obligatoire.</value>
+  </data>
+  <data name="Invoice.NotFound" xml:space="preserve">
+    <value>La facture avec l'ID '{0}' est introuvable.</value>
+  </data>
+  <data name="Invoice.InvalidId" xml:space="preserve">
+    <value>Identifiant de facture invalide.</value>
+  </data>
+  <data name="PlatformInvoice.NotFound" xml:space="preserve">
+    <value>La facture plateforme avec l'identifiant '{0}' est introuvable.</value>
+  </data>
+  <data name="PlatformInvoice.InvalidId" xml:space="preserve">
+    <value>Identifiant de facture plateforme invalide.</value>
+  </data>
+  <data name="JournalPosting.Topup" xml:space="preserve">
+    <value>Paiement de rechargement du portefeuille pour le client {0}, devise {1}, PSP {2}.</value>
+  </data>
+  <data name="Payment.AmountInvalid" xml:space="preserve">
+    <value>Le montant doit être supérieur à zéro.</value>
+  </data>
+  <data name="Payment.InvoicesAreRequired" xml:space="preserve">
+    <value>Les factures ne sont pas sélectionnées.</value>
+  </data>
+  <data name="Payment.BillsNotFound" xml:space="preserve">
+    <value>Les factures sont introuvables.</value>
+  </data>
+  <data name="Payment.OneOrMoreBillsISNotFound" xml:space="preserve">
+    <value>Une ou plusieurs factures sont introuvables.</value>
+  </data>
+  <data name="Payment.AmountExceedsBillAmount" xml:space="preserve">
+    <value>Le montant saisi dépasse le montant de la facture.</value>
+  </data>
+  <data name="Payment.AmountExceedsBillAvailableAmount" xml:space="preserve">
+    <value>Le montant demande pour la facture '{0}' depasse le montant disponible ({1}).</value>
+  </data>
+  <data name="Payment.BillControlConcurrencyConflict" xml:space="preserve">
+    <value>L'etat de la facture a change pendant l'initiation du paiement. Veuillez actualiser puis reessayer.</value>
+  </data>
+  <data name="Payment.BillsAmountMustBePaidAll" xml:space="preserve">
+    <value>Le montant doit être égal à la somme de tous les montants dus impayés des factures.</value>
+  </data>
+  <data name="Payment.BillsDonotHaveSameCurrency" xml:space="preserve">
+    <value>Toutes les factures sélectionnées doivent avoir la même devise.</value>
+  </data>
+  <data name="Payment.AccountDoesNotBelongToCustomer" xml:space="preserve">
+    <value>Le compte n’appartient pas au client connecté.</value>
+  </data>
+  <data name="Payment.AccountInvoiceCurrencyMismtch" xml:space="preserve">
+    <value>La devise du compte doit correspondre à celle de la facture.</value>
+  </data>
+  <data name="Payment.AccountInsufficientBalance" xml:space="preserve">
+    <value>Solde insuffisant, veuillez d’abord recharger votre portefeuille.</value>
+  </data>
+  <data name="JournalPosting.BillPayment" xml:space="preserve">
+    <value>Paiement de facture pour le client {0}, devise {1}, PSP {2}.</value>
+  </data>
+  <data name="BillerAccountDoesNotExist" xml:space="preserve">
+    <value>Le compte du facturier n’existe pas.</value>
+  </data>
+  <data name="Payment.Provider.CodeAlreadyExists" xml:space="preserve">
+    <value>Un prestataire de paiement avec le code '{0}' existe déjà.</value>
+  </data>
+  <data name="Payment.Provider.PartnerAlreadyHasProvider" xml:space="preserve">
+    <value>Un prestataire de paiement existe déjà pour le partenaire avec l'id '{0}'.</value>
+  </data>
+  <data name="Payment.Provider.NotFound" xml:space="preserve">
+    <value>Prestataire de paiement avec l'id '{0}' introuvable.</value>
+  </data>
+  <data name="Payment.Provider.CreateSuccess" xml:space="preserve">
+    <value>Prestataire de paiement créé avec succès.</value>
+  </data>
+  <data name="Payment.Provider.UpdateSuccess" xml:space="preserve">
+    <value>Prestataire de paiement mis à jour avec succès.</value>
+  </data>
+  <data name="Payment.Provider.DeleteSuccess" xml:space="preserve">
+    <value>Prestataire de paiement supprimé avec succès.</value>
+  </data>
+  <data name="Campaign.NotFound" xml:space="preserve">
+    <value>Campagne avec l'identifiant '{0}' introuvable.</value>
+  </data>
+  <data name="Campaign.InvalidRequest" xml:space="preserve">
+    <value>L'heure de début est requise.</value>
+  </data>
+  <data name="Campaign.TranslationsRequired" xml:space="preserve">
+    <value>Les traductions du titre et du message en anglais et en français sont requises.</value>
+  </data>
+  <data name="Campaign.Translation.LanguageRequired" xml:space="preserve">
+    <value>Le code de langue de la traduction est requis.</value>
+  </data>
+  <data name="Campaign.Translation.LanguageNotSupported" xml:space="preserve">
+    <value>La langue '{0}' n'est pas prise en charge.</value>
+  </data>
+  <data name="Campaign.Translation.MessageRequired" xml:space="preserve">
+    <value>Le message est requis pour la langue '{0}'.</value>
+  </data>
+  <data name="Campaign.Translation.TitleRequired" xml:space="preserve">
+    <value>Le titre est requis pour la langue '{0}'.</value>
+  </data>
+  <data name="Campaign.CreateSuccess" xml:space="preserve">
+    <value>Campagne créée avec succès.</value>
+  </data>
+  <data name="Campaign.UpdateSuccess" xml:space="preserve">
+    <value>Campagne mise à jour avec succès.</value>
+  </data>
+  <data name="Campaign.DeleteSuccess" xml:space="preserve">
+    <value>Campagne supprimée avec succès.</value>
+  </data>
+  <data name="Campaign.Update.NotAllowedWhenCompleted" xml:space="preserve">
+    <value>Les campagnes terminées ne peuvent pas être modifiées.</value>
+  </data>
+  <data name="Campaign.Schedule.NotAllowedWhenCompleted" xml:space="preserve">
+    <value>Les campagnes terminées ne peuvent pas être planifiées.</value>
+  </data>
+  <data name="Campaign.AudienceGroup.NotSupported" xml:space="preserve">
+    <value>Le groupe d'audience '{0}' n'est pas pris en charge.</value>
+  </data>
+  <data name="Payment.BillsMustBeForTheSameSubscription" xml:space="preserve">
+    <value>Toutes les factures sélectionnées doivent appartenir au même abonnement.</value>
+  </data>
+  <data name="Payment.InvoiceHasNoDueAmount" xml:space="preserve">
+    <value>La facture {0} n’a aucun montant dû.</value>
+  </data>
+  <data name="Biller.Add.InvalidRequest" xml:space="preserve">
+    <value>Le nom légal, le code facturier et le nom du facturier sont requis.</value>
+  </data>
+  <data name="Biller.Add.CodeAlreadyExists" xml:space="preserve">
+    <value>Un facturier avec le code '{0}' existe déjà.</value>
+  </data>
+  <data name="Biller.Add.PartnerLegalNameAlreadyExists" xml:space="preserve">
+    <value>Un partenaire avec le nom légal '{0}' existe déjà.</value>
+  </data>
+  <data name="Biller.Add.AccountTypeNotFound" xml:space="preserve">
+    <value>Le type de compte avec l'ID '{0}' est introuvable.</value>
+  </data>
+  <data name="Biller.Add.CurrencyNotFound" xml:space="preserve">
+    <value>La devise avec l'ID '{0}' est introuvable.</value>
+  </data>
+  <data name="Biller.Add.Success" xml:space="preserve">
+    <value>Facturier créé avec succès.</value>
+  </data>
+  <data name="Biller.NotFound" xml:space="preserve">
+    <value>Facturier avec l'id '{0}' introuvable.</value>
+  </data>
+  <data name="Biller.Update.Success" xml:space="preserve">
+    <value>Facturier mis à jour avec succès.</value>
+  </data>
+  <data name="Biller.Delete.Success" xml:space="preserve">
+    <value>Facturier supprimé avec succès.</value>
+  </data>
+  <data name="CustomerFavorites.FavoriteTypeNotFound" xml:space="preserve">
+    <value>Type de favori introuvable.</value>
+  </data>
+  <data name="CustomerFavorites.SubscriptionNotFound" xml:space="preserve">
+    <value>Abonnement favori introuvable.</value>
+  </data>
+  <data name="CustomerFavorites.SubscriptionNotBelongToCustomer" xml:space="preserve">
+    <value>L'abonnement ne correspond pas au client.</value>
+  </data>
+  <data name="CustomerFavorites.AlreadyExists" xml:space="preserve">
+    <value>Un favori client existe déjà.</value>
+  </data>
+  <data name="PaymentOrder.DescriptionTopup" xml:space="preserve">
+    <value>Recharge du portefeuille depuis {0} via {1}</value>
+  </data>
+  <data name="PaymentOrder.DescriptionPayBill" xml:space="preserve">
+    <value>Paiement de facture le {0} pour l’abonnement {1}</value>
+  </data>
+  <data name="PaymentOrder.DescriptionMeterCharge" xml:space="preserve">
+    <value>Paiement anticipé sur {0} pour l’abonnement {1}</value>
+  </data>
+	<data name="PaymentOrder.DescriptionTopupBref" xml:space="preserve">
+    <value>Recharge du portefeuille</value>
+  </data>
+	<data name="PaymentOrder.DescriptionPayBillBref" xml:space="preserve">
+    <value>Paiement postpayé</value>
+  </data>
+	<data name="PaymentOrder.DescriptionMeterChargeBref" xml:space="preserve">
+    <value>Recharge prépayée</value>
+  </data>	
+  <data name="CouldNotSendOTPRightNow" xml:space="preserve">
+    <value>Impossible d'envoyer le code OTP pour le moment</value>
+  </data>
+  <data name="Auth.AccountCreatedSuccessfully" xml:space="preserve">
+    <value>Inscription réussie avec succès</value>
+  </data>
+  <data name="Auth.PasswordUpdatedSuccessfully" xml:space="preserve">
+    <value>Mot de passe mis à jour avec succès</value>
+  </data>
+  <data name="Auth.MobileUpdatedSuccessfully" xml:space="preserve">
+    <value>Numéro de mobile mis à jour avec succès</value>
+  </data>
+  <data name="Customer.ProfileUpdatedSuccessfully" xml:space="preserve">
+    <value>Profil mis à jour avec succès</value>
+  </data>
+  <data name="Account.Order.ReorderedSuccessfully" xml:space="preserve">
+    <value>Réorganisé avec succès</value>
+  </data>
+  <data name="File.Download.Success" xml:space="preserve">
+    <value>Téléchargement réussi</value>
+  </data>
+  <data name="Notification.Channel.Invalid" xml:space="preserve">
+    <value>Canal de notification invalide '{0}'.</value>
+  </data>
+  <data name="Jobs.EndMustBeOnOrAfterStart" xml:space="preserve">
+    <value>La date de fin doit être égale ou postérieure à la date de début.</value>
+  </data>
+  <data name="Jobs.NotRegisteredOrNotAvailable" xml:space="preserve">
+    <value>La tâche n'est pas enregistrée ou n'est pas disponible.</value>
+  </data>
+  <data name="Jobs.TriggeredSuccessfully" xml:space="preserve">
+    <value>La tâche a été déclenchée avec succès.</value>
+  </data>
+  <data name="Payment.LockAcquireFailed" xml:space="preserve">
+    <value>Une autre opération traite actuellement ce paiement. Veuillez réessayer dans un instant.</value>
+  </data>
+  <data name="Payment.NoInvoicesToPay" xml:space="preserve">
+    <value>Aucune facture à payer.</value>
+  </data>
+  <data name="Payment.Provider.PartnerNotFound" xml:space="preserve">
+    <value>Partenaire '{0}' introuvable pour le prestataire de paiement '{1}'.</value>
+  </data>
+  <data name="Payment.History.OrderHasNoItems" xml:space="preserve">
+    <value>La commande de paiement '{0}' ne contient aucun élément permettant de déterminer la description.</value>
+  </data>
+  <data name="Payment.History.UnsupportedItemType" xml:space="preserve">
+    <value>Type d'élément de commande non pris en charge '{0}' pour la commande de paiement '{1}'.</value>
+  </data>
+  <data name="Payment.BillerDailyJobLocked" xml:space="preserve">
+    <value>Impossible d'initier le paiement car la tâche quotidienne du facturier est active.</value>
+  </data>
+  <data name="Billing.Apply.NoConnectorForBiller" xml:space="preserve">
+    <value>Aucun connecteur configuré pour le code facturier '{0}'.</value>
+  </data>
+  <data name="Accounting.CustomerAccountNotFound" xml:space="preserve">
+    <value>Compte client introuvable.</value>
+  </data>
+  <data name="Accounting.PspAccountNotFound" xml:space="preserve">
+    <value>Compte PSP introuvable.</value>
+  </data>
+  <data name="Accounting.PspBankAccountNotFound" xml:space="preserve">
+    <value>Compte bancaire du PSP introuvable.</value>
+  </data>
+  <data name="Accounting.RevenueAccountNotFound" xml:space="preserve">
+    <value>Compte de revenu introuvable.</value>
+  </data>
+  <data name="Accounting.TaxPayableAccountNotFound" xml:space="preserve">
+    <value>Compte de taxes à payer introuvable.</value>
+  </data>
+  <data name="Accounting.TopupCostAccountNotFound" xml:space="preserve">
+    <value>Compte du coût de recharge introuvable.</value>
+  </data>
+  <data name="Accounting.BillingServiceCurrencyNotConfigured" xml:space="preserve">
+    <value>La devise '{0}' n'est pas configurée pour le service de facturation '{1}'.</value>
+  </data>
+  <data name="Accounting.BillerNotFound" xml:space="preserve">
+    <value>Facturier introuvable.</value>
+  </data>
+  <data name="Accounting.BillerAccountNotFound" xml:space="preserve">
+    <value>Compte du facturier introuvable.</value>
+  </data>
+  <data name="Accounting.BillerBankAccountNotFound" xml:space="preserve">
+    <value>Compte bancaire du facturier introuvable.</value>
+  </data>
+  <data name="Accounting.PaymentCostAccountNotFound" xml:space="preserve">
+    <value>Compte du coût de paiement introuvable.</value>
+  </data>
+  <data name="Accounting.UnsupportedItemType" xml:space="preserve">
+    <value>Type d'élément de commande de paiement non pris en charge.</value>
+  </data>
+  <data name="Account.BillerAccountDoesNotExist" xml:space="preserve">
+    <value>Le compte du facturier n'existe pas.</value>
+  </data>
+  <data name="BillingInquiry.BillingRefRequired" xml:space="preserve">
+    <value>La référence de facturation est requise.</value>
+  </data>
+  <data name="BillingInquiry.AmountCheckFailed" xml:space="preserve">
+    <value>Le montant du paiement ne correspond pas au montant de la facture.</value>
+  </data>
+  <data name="Common.CurrencyNotFound" xml:space="preserve">
+    <value>La devise '{0}' est introuvable.</value>
+  </data>
+  <data name="Common.PaymentMethodByCodeAndPSPCodeNotFound" xml:space="preserve">
+    <value>Le moyen de paiement '{0}' pour le PSP '{1}' est introuvable.</value>
+  </data>
+  <data name="Common.AmountOutOfRange" xml:space="preserve">
+    <value>Le montant {0} est en dehors de la plage autorisée [{1}, {2}].</value>
+  </data>
+  <data name="Common.CurrencyValidationError" xml:space="preserve">
+    <value>Erreur lors de la validation de la devise '{0}'.</value>
+  </data>
+  <data name="Journal.InvalidModel" xml:space="preserve">
+    <value>Le modèle du journal est invalide.</value>
+  </data>
+  <data name="Payment.Initialize.BillingServiceNotFound" xml:space="preserve">
+    <value>Le service de facturation est introuvable pour cette initialisation de paiement.</value>
+  </data>
+  <data name="Payment.BillsDonotHaveSameBillingReference" xml:space="preserve">
+    <value>Toutes les factures sélectionnées doivent avoir la même référence de facturation.</value>
+  </data>
+  <data name="PlatformInvoice.TopupFees" xml:space="preserve">
+    <value>Frais de plateforme pour rechargement (partenaire client {0}, partenaire PSP {1}, ligne de commande {2}).</value>
+  </data>
+  <data name="PlatformInvoice.TopupCost" xml:space="preserve">
+    <value>Répartition des coûts fournisseur pour rechargement (partenaire client {0}, partenaire PSP {1}, ligne de commande {2}).</value>
+  </data>
+  <data name="PlatformInvoice.PaymentFees" xml:space="preserve">
+    <value>Frais de paiement de facture pour partenaire client {0} (partenaire facturier {1}).</value>
+  </data>
+  <data name="PlatformInvoice.PaymentCost" xml:space="preserve">
+    <value>Répartition du coût de paiement de facture pour partenaire client {0} (partenaire facturier {1}).</value>
+  </data>
+  <data name="PlatformInvoice.PaymentCommission" xml:space="preserve">
+    <value>Commission de paiement de facture au partenaire facturier {0} (partenaire client {1}).</value>
+  </data>
+  <data name="JournalPosting.TopupFees" xml:space="preserve">
+    <value>Frais de recharge pour Client {0}, Devise {1}, PSP {2}.</value>
+  </data>
+  <data name="JournalPosting.TopupFeesTax" xml:space="preserve">
+    <value>Taxe sur frais de recharge pour Client {0}, Devise {1}, PSP {2}.</value>
+  </data>
+  <data name="JournalPosting.TopupCost" xml:space="preserve">
+    <value>Coût de recharge pour Client {0}, Devise {1}, PSP {2}.</value>
+  </data>
+  <data name="JournalPosting.TopupCostTax" xml:space="preserve">
+    <value>Taxe sur coût de recharge pour Client {0}, Devise {1}, PSP {2}.</value>
+  </data>
+  <data name="JournalPosting.TopupSettlement" xml:space="preserve">
+    <value>Règlement de recharge pour Client {0}, Devise {1}, PSP {2}.</value>
+  </data>
+  <data name="JournalPosting.PaymentFees" xml:space="preserve">
+    <value>Frais de paiement pour Client {0}, Devise {1}, Facturier {2}.</value>
+  </data>
+  <data name="JournalPosting.PaymentFeesTax" xml:space="preserve">
+    <value>Taxe sur frais de paiement pour Client {0}, Devise {1}, Facturier {2}.</value>
+  </data>
+  <data name="JournalPosting.PaymentCost" xml:space="preserve">
+    <value>Coût de paiement pour Client {0}, Devise {1}, Facturier {2}.</value>
+  </data>
+  <data name="JournalPosting.PaymentCostTax" xml:space="preserve">
+    <value>Taxe sur coût de paiement pour Client {0}, Devise {1}, Facturier {2}.</value>
+  </data>
+  <data name="JournalPosting.PaymentCommission" xml:space="preserve">
+    <value>Commission de paiement pour Client {0}, Devise {1}, Facturier {2}.</value>
+  </data>
+  <data name="JournalPosting.PaymentCommissionTax" xml:space="preserve">
+    <value>Taxe sur commission de paiement pour Client {0}, Devise {1}, Facturier {2}.</value>
+  </data>
+  <data name="JournalPosting.PaymentSettlement" xml:space="preserve">
+    <value>Règlement de paiement pour Client {0}, Devise {1}, Facturier {2}.</value>
+  </data>
+  <data name="JournalPosting.OpeningBalance" xml:space="preserve">
+    <value>Solde d'ouverture.</value>
+  </data>
+  <data name="JournalPosting.PaymentVoucher" xml:space="preserve">
+    <value>Bon de paiement.</value>
+  </data>
+  <data name="JournalPosting.ReceiptVoucher" xml:space="preserve">
+    <value>Bon de réception.</value>
+  </data>
+  <data name="JournalPosting.CreditNote" xml:space="preserve">
+    <value>Note de crédit.</value>
+  </data>
+  <data name="JournalPosting.DebitNote" xml:space="preserve">
+    <value>Note de débit.</value>
+  </data>
+  <data name="JournalPosting.ManualJournal" xml:space="preserve">
+    <value>Journal manuel.</value>
+  </data>
+  <data name="LookupTranslation.TypeInvalid" xml:space="preserve">
+    <value>Le type de référentiel demandé n'est pas pris en charge.</value>
+  </data>
+  <data name="LookupTranslation.LookupNotFound" xml:space="preserve">
+    <value>Le référentiel « {0} » avec l'identifiant {1} est introuvable.</value>
+  </data>
+  <data name="LookupTranslation.LanguageRequired" xml:space="preserve">
+    <value>Le code de langue est requis.</value>
+  </data>
+  <data name="LookupTranslation.LanguageNotSupported" xml:space="preserve">
+    <value>Le code de langue « {0} » n'est pas pris en charge.</value>
+  </data>
+  <data name="LookupTranslation.NameRequired" xml:space="preserve">
+    <value>Le nom de la traduction est requis.</value>
+  </data>
+  <data name="LookupTranslation.Added" xml:space="preserve">
+    <value>Traduction ajoutée avec succès.</value>
+  </data>
+  <data name="LookupTranslation.Updated" xml:space="preserve">
+    <value>Traduction mise à jour avec succès.</value>
+  </data>
+  <data name="User.NotFound" xml:space="preserve">
+    <value>Utilisateur introuvable.</value>
+  </data>
+  <data name="User.Management.ScopeOnlyOwnUsers" xml:space="preserve">
+    <value>Vous ne pouvez gérer que les utilisateurs de votre périmètre.</value>
+  </data>
+  <data name="User.Management.InvalidRole" xml:space="preserve">
+    <value>Rôle invalide.</value>
+  </data>
+  <data name="User.Management.RoleNotAllowed" xml:space="preserve">
+    <value>Vous n'êtes pas autorisé à gérer ce rôle.</value>
+  </data>
+  <data name="User.Management.CustomerCreatePlatformOnly" xml:space="preserve">
+    <value>Seuls les utilisateurs plateforme peuvent créer des utilisateurs client.</value>
+  </data>
+  <data name="User.Management.PartnerIdRequired" xml:space="preserve">
+    <value>L'identifiant du partenaire est requis pour ce rôle.</value>
+  </data>
+  <data name="User.IdentityRefMissing" xml:space="preserve">
+    <value>La référence d'identité de l'utilisateur est manquante.</value>
+  </data>
+  <data name="User.CannotDeleteSelf" xml:space="preserve">
+    <value>Vous ne pouvez pas supprimer votre propre compte.</value>
+  </data>
+  <data name="User.ContextMissing" xml:space="preserve">
+    <value>Le contexte utilisateur est manquant.</value>
+  </data>
+  <data name="User.ActorNotFound" xml:space="preserve">
+    <value>L'utilisateur acteur est introuvable.</value>
+  </data>
+  <data name="User.PartnerLinkRequired" xml:space="preserve">
+    <value>Votre compte n'est pas lié à un partenaire.</value>
+  </data>
+  <data name="User.Management.Forbidden" xml:space="preserve">
+    <value>Vous n'êtes pas autorisé à gérer les utilisateurs.</value>
+  </data>
+  <data name="User.Management.TargetMustBeCustomer" xml:space="preserve">
+    <value>Cette action concerne uniquement les utilisateurs clients.</value>
+  </data>
+  <data name="Partner.TypeMismatchForRole" xml:space="preserve">
+    <value>Le type de partenaire ne correspond pas au rôle sélectionné.</value>
+  </data>
+  <data name="Payment.PspInit.NeedPhoneNumber" xml:space="preserve">
+    <value>Le paiement nécessite un numéro de téléphone. Finalisez l'opération en saisissant le numéro de téléphone.</value>
+  </data>
+  <data name="Payment.PspInit.PhoneNumberNotSupported" xml:space="preserve">
+    <value>Ce numéro de téléphone n'est pas pris en charge pour une recharge (vérifiez le préfixe de ce numéro).</value>
+  </data>
+  <data name="Payment.PspInit.ClientPrepared" xml:space="preserve">
+    <value>Le paiement a été enregistré sur la plateforme et le fournisseur de service de paiement a renvoyé les données d&apos;étape suivante. Poursuivez côté client selon le flux indiqué dans la réponse.</value>
+  </data>
+  <data name="Payment.PspInit.ProviderPending" xml:space="preserve">
+    <value>Le paiement a été envoyé au fournisseur de service de paiement. Il est en traitement ou nécessite une autre action : suivez les données d&apos;étape suivante, ou attendez le sondage ou l&apos;événement webhook selon la configuration de la méthode de paiement.</value>
+  </data>
+  <data name="Payment.PspInit.CompletedInSession" xml:space="preserve">
+    <value>Le paiement est terminé : soldes et comptabilité ont été mis à jour, et l&apos;application côté facturier ou compteur a été appliquée le cas échéant.</value>
+  </data>
+  <data name="Payment.Topup.SummaryCalculated" xml:space="preserve">
+    <value>Relevé de frais pour rechargement du portefeuille : les montants et les frais du fournisseur ont été calculés. Vérifiez les totaux avant de lancer le paiement.</value>
+  </data>
+  <data name="Payment.Meter.SummaryCalculated" xml:space="preserve">
+    <value>Relevé de frais pour recharge de compteur (prépayé) : les montants et les frais de service ont été calculés. Vérifiez les totaux avant de lancer le paiement.</value>
+  </data>
+  <data name="Payment.Bill.SummaryCalculated" xml:space="preserve">
+    <value>Résumé du paiement de facture : le détail par facture et les frais combinés ont été calculés. Vérifiez les lignes et le total avant de lancer le paiement.</value>
+  </data>
+  <data name="Payment.TopupInit.NoPaymentRecord" xml:space="preserve">
+    <value>Le rechargement du portefeuille n&apos;a pas pu être créé : le paiement et la commande n&apos;ont pas été enregistrés. Vérifiez la demande et réessayez, ou contactez l&apos;assistance avec l&apos;heure de la demande.</value>
+  </data>
+  <data name="Payment.TopupInit.UnexpectedError" xml:space="preserve">
+    <value>Le rechargement du portefeuille n&apos;a pas pu démarrer à cause d&apos;une erreur serveur inattendue. Votre portefeuille n&apos;a pas été débité. Réessayez ; si le problème continue, contactez l&apos;assistance.</value>
+  </data>
+  <data name="Payment.MeterInit.NoPaymentRecord" xml:space="preserve">
+    <value>La recharge compteur n&apos;a pas pu être créée : le paiement et la commande n&apos;ont pas été enregistrés. Vérifiez le numéro de compteur, le montant et le moyen de paiement, puis réessayez.</value>
+  </data>
+  <data name="Payment.BillInit.NoPaymentRecord" xml:space="preserve">
+    <value>Le paiement de facture n&apos;a pas pu être créé : l&apos;enregistrement de paiement n&apos;a pas été sauvegardé. L&apos;état des factures ou des réservations a peut-être changé : actualisez la liste des factures et réessayez, ou lancez un nouveau paiement.</value>
+  </data>
+  <data name="Payment.Bill.ConfirmSuccess" xml:space="preserve">
+    <value>L&apos;étape auprès du prestataire de services de paiement s&apos;est terminée avec succès. Veuillez patienter jusqu&apos;à la finalisation.</value>
+  </data>
+  <data name="Payment.Cancel.Success" xml:space="preserve">
+    <value>Paiement annulé avec succès</value>
+  </data>
+  <data name="Payment.BillInit.CannotPaid" xml:space="preserve">
+    <value>Le paiement ne peut être effectué actuellement en raison d'un blocage du journal du fournisseur.</value>
+  </data>
+  <data name="Payment.Confirm.NotOutgoingBillOrMeter" xml:space="preserve">
+    <value>Cette action s&apos;applique uniquement aux paiements de facture ou de compteur (prépayé) sortant depuis le portefeuille client. Le paiement sélectionné (id {0}) n&apos;appartient pas à ce type.</value>
+  </data>
+  <data name="Payment.Confirm.InvalidStatus" xml:space="preserve">
+    <value>Le paiement (id {0}) ne peut pas être confirmé dans l&apos;état &apos;{1}&apos; actuel. Seuls les états en attente ou en traitement sont acceptés pour cette opération.</value>
+  </data>
+  <data name="Payment.Confirm.Needed" xml:space="preserve">
+    <value>Veuillez confirmer ce paiement (Montant : {0} {1}).</value>
+  </data>
+  <data name="Payment.Confirm.External" xml:space="preserve">
+    <value>Le paiement sera confirmé par un organisme externe.</value>
+  </data>
+  <data name="Payment.Confirm.Completed" xml:space="preserve">
+    <value>Paiement confirmé et effectué avec succès.</value>
+  </data>
+  <data name="Payment.Complete.External" xml:space="preserve">
+    <value>Paiement confirmé et finalisé en externe.</value>
+  </data>
+  <data name="Payment.TopupRate.QuerySuccess" xml:space="preserve">
+    <value>Statistiques de taux de rechargement : données chargées à partir des paiements de rechargement réussis pour les filtres choisis.</value>
+  </data>
+  <data name="Payment.TopupRate.ListSuccess" xml:space="preserve">
+    <value>Liste paginée des paiements de rechargement chargée pour les filtres sélectionnés.</value>
+  </data>
+  <data name="Payment.TopupRate.ExportSuccess" xml:space="preserve">
+    <value>Le fichier d&apos;export des taux de rechargement a été généré. Téléchargez le flux de fichier de la réponse.</value>
+  </data>
+  <data name="Payment.CompletedTopup.ByCurrency.QuerySuccess" xml:space="preserve">
+    <value>Totaux des rechargements complétés par devise chargés avec succès.</value>
+  </data>
+  <data name="Payment.CompletedTopup.ByCurrency.ExportSuccess" xml:space="preserve">
+    <value>Le fichier d&apos;export des rechargements complétés par devise a été généré. Téléchargez le flux de fichier de la réponse.</value>
+  </data>
+  <data name="Payment.CompletedTopup.ByCurrency.RowsExportSuccess" xml:space="preserve">
+    <value>Le fichier d&apos;export des lignes de rechargements complétés par devise a été généré. Téléchargez le flux de fichier de la réponse.</value>
+  </data>
+  <data name="Payment.CompletedTopup.ByCurrency.RowsListSuccess" xml:space="preserve">
+    <value>Les lignes de rechargements complétés par devise ont été chargées avec succès.</value>
+  </data>
+  <data name="Payment.CompletedTopup.ByDate.QuerySuccess" xml:space="preserve">
+    <value>Totaux des rechargements complétés par date chargés avec succès.</value>
+  </data>
+  <data name="Payment.CompletedTopup.ByDate.ExportSuccess" xml:space="preserve">
+    <value>Le fichier d&apos;export des rechargements complétés par date a été généré. Téléchargez le flux de fichier de la réponse.</value>
+  </data>
+  <data name="Payment.CompletedTopup.ByDate.RowsExportSuccess" xml:space="preserve">
+    <value>Le fichier d&apos;export des lignes de rechargements complétés par date a été généré. Téléchargez le flux de fichier de la réponse.</value>
+  </data>
+  <data name="Payment.CompletedTopup.ByDate.RowsListSuccess" xml:space="preserve">
+    <value>Les lignes de rechargements complétés par date ont été chargées avec succès.</value>
+  </data>
+  <data name="Payment.CompletedTopup.ByDate.InvalidDateRange" xml:space="preserve">
+    <value>La date de début doit être antérieure ou égale à la date de fin.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByDate.QuerySuccess" xml:space="preserve">
+    <value>Totaux des paiements de factures postpayées complétées par date chargés avec succès.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByDate.ExportSuccess" xml:space="preserve">
+    <value>Le fichier d&apos;export des paiements postpayés par date a été généré. Téléchargez le flux de fichier de la réponse.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByDate.RowsExportSuccess" xml:space="preserve">
+    <value>Le fichier d&apos;export des lignes de paiements postpayés par date a été généré. Téléchargez le flux de fichier de la réponse.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByDate.RowsListSuccess" xml:space="preserve">
+    <value>Lignes de paiements de factures postpayées complétées par date chargées avec succès.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByDate.InvalidDateRange" xml:space="preserve">
+    <value>La date de début doit être antérieure ou égale à la date de fin.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByCenter.QuerySuccess" xml:space="preserve">
+    <value>Totaux des paiements de factures postpayées complétées par centre chargés avec succès.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByCenter.ExportSuccess" xml:space="preserve">
+    <value>Le fichier d&apos;export des paiements postpayés par centre a été généré. Téléchargez le flux de fichier de la réponse.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByCenter.RowsExportSuccess" xml:space="preserve">
+    <value>Le fichier d&apos;export des lignes de paiements postpayés par centre a été généré. Téléchargez le flux de fichier de la réponse.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByCenter.RowsListSuccess" xml:space="preserve">
+    <value>Les lignes de paiements postpayés par centre ont été chargées avec succès.</value>
+  </data>
+  <data name="Payment.CompletedPostpaidPayBill.ByCenter.InvalidDateRange" xml:space="preserve">
+    <value>La date de début doit être antérieure ou égale à la date de fin.</value>
+  </data>
+  <data name="Payment.CompletedPrepaidPayBill.ByDate.QuerySuccess" xml:space="preserve">
+    <value>Les totaux des paiements de factures prépayées complétés par date ont été chargés avec succès.</value>
+  </data>
+  <data name="Payment.CompletedPrepaidPayBill.ByDate.ExportSuccess" xml:space="preserve">
+    <value>Le fichier d'export des paiements de factures prépayées complétés par date a été généré avec succès. Téléchargez le flux du fichier de réponse.</value>
+  </data>
+  <data name="Payment.CompletedPrepaidPayBill.ByDate.RowsExportSuccess" xml:space="preserve">
+    <value>Le fichier d'export des lignes de paiements de factures prépayées complétés par date a été généré avec succès. Téléchargez le flux du fichier de réponse.</value>
+  </data>
+  <data name="Payment.CompletedPrepaidPayBill.ByDate.RowsListSuccess" xml:space="preserve">
+    <value>Les lignes de paiements de factures prépayées complétés par date ont été chargées avec succès.</value>
+  </data>
+  <data name="Payment.CompletedPrepaidPayBill.ByDate.InvalidDateRange" xml:space="preserve">
+    <value>La date de début doit être antérieure ou égale à la date de fin.</value>
+  </data>
+  <data name="Account.JournalLineStatement.ExportSuccess" xml:space="preserve">
+    <value>Le fichier d'exportation des instructions de journalisation a été généré avec succès. Téléchargez le flux de fichiers de réponse.</value>
+  </data>
+  <data name="Payment.Validation.PspSyncNotPollable" xml:space="preserve">
+    <value>Le paiement (id {0}) ne peut pas être synchronisé avec le fournisseur car il est en état &apos;{1}&apos;. Seuls les statuts en attente ou en traitement sont acceptés.</value>
+  </data>
+  <data name="Payment.Validation.PspSyncMissingRef" xml:space="preserve">
+    <value>Le paiement (id {0}) n&apos;a pas de référence de paiement interne, le fournisseur ne peut pas être appelé. L&apos;initiation a peut-être été interrompue.</value>
+  </data>
+  <data name="Payment.Validation.PspSyncNoMethod" xml:space="preserve">
+    <value>Le paiement (id {0}) n&apos;a pas de moyen de paiement actif chargé ; l&apos;appel au fournisseur est impossible.</value>
+  </data>
+  <data name="Payment.Validation.PspSyncNoPsp" xml:space="preserve">
+    <value>Le paiement (id {0}) n&apos;a pas de code fournisseur de service de paiement (PSP) ; l&apos;intégration n&apos;est pas disponible pour cet enregistrement.</value>
+  </data>
+  <data name="Common.Validation.PageSizePositive" xml:space="preserve">
+    <value>La taille de page doit être supérieure à zéro.</value>
+  </data>
+  <data name="Common.Validation.MinimumAgePositive" xml:space="preserve">
+    <value>L&apos;âge minimum en minutes doit être supérieur à zéro.</value>
+  </data>
+  <data name="Payment.Psp.ConnectorNotRegisteredForPolling" xml:space="preserve">
+    <value>Le connecteur PSP &apos;{0}&apos; n&apos;est pas enregistré. Le sondage ou la synchronisation d&apos;état n&apos;est pas disponible.</value>
+  </data>
+  <data name="Payment.Webhook.CannotCompleteInStatus" xml:space="preserve">
+    <value>Le paiement &apos;{0}&apos; ne peut pas être clôturé via webhook dans l&apos;état &apos;{1}&apos; actuel.</value>
+  </data>
+  
+  <data name="Payment.AkibaPay.InitiateMethodNotImplemented" xml:space="preserve">
+    <value>L&apos;initiation côté serveur AkibaPay n&apos;est pas implémentée pour le mode de paiement &apos;{0}&apos;.</value>
+  </data>
+  <data name="Payment.AkibaPay.FromNumberRequired" xml:space="preserve">
+    <value>FromNumber est requis pour le dépôt client AkibaPay. Indiquez-le dans le corps de la requête init-topup.</value>
+  </data>
+  <data name="Payment.AkibaPay.FromNumberInvalid" xml:space="preserve">
+    <value>Veuillez saisir un numéro de téléphone valide au format +243XXXXXXXXX.</value>
+  </data>
+  <data name="Payment.AkibaPay.PaymentRefRequired" xml:space="preserve">
+    <value>La référence de paiement est requise pour le dépôt client AkibaPay.</value>
+  </data>
+  <data name="Payment.AkibaPay.InitiateHttpFailed" xml:space="preserve">
+    <value>Impossible d&apos;initier le paiement. Veuillez réessayer.</value>
+  </data>
+  <data name="Payment.AkibaPay.ManagementCredentialsNotConfigured" xml:space="preserve">
+    <value>Les identifiants de l&apos;API de gestion AkibaPay ne sont pas configurés.</value>
+  </data>
+  <data name="Payment.AkibaPay.StatusLookupPaymentRefRequired" xml:space="preserve">
+    <value>La référence de paiement est requise pour la consultation du statut de transaction AkibaPay.</value>
+  </data>
+  <data name="Payment.AkibaPay.ManagementLoginHttpFailed" xml:space="preserve">
+    <value>Échec de la connexion à l&apos;API de gestion AkibaPay. HTTP {0}.</value>
+  </data>
+  <data name="Payment.AkibaPay.ManagementLoginParseFailed" xml:space="preserve">
+    <value>Impossible d&apos;analyser la réponse de connexion à l&apos;API de gestion AkibaPay.</value>
+  </data>
+  <data name="Payment.AkibaPay.StatusHttpFailed" xml:space="preserve">
+    <value>Échec de la requête de statut de transaction AkibaPay. HTTP {0}.</value>
+  </data>
+  <data name="Payment.AkibaPay.StatusParseFailed" xml:space="preserve">
+    <value>Impossible d&apos;analyser la réponse de statut de transaction AkibaPay.</value>
+  </data>
+  <data name="Payment.AkibaPay.StatusCheckUnexpectedError" xml:space="preserve">
+    <value>Une erreur s&apos;est produite lors de la vérification du statut de transaction AkibaPay.</value>
+  </data>
+  <data name="Payment.AkibaPay.StatusNotFoundFailed" xml:space="preserve">
+    <value>Le paiement n&apos;a pas pu être effectué. Veuillez réessayer.</value>
+  </data>
+  <data name="Payment.AkibaPay.ConfigMissingOnMethod" xml:space="preserve">
+    <value>Le mode de paiement &apos;{0}&apos; n&apos;a pas de configuration.</value>
+  </data>
+  <data name="Payment.AkibaPay.ConfigFieldsMissing" xml:space="preserve">
+    <value>La configuration inline doit inclure un objet &apos;fields&apos;.</value>
+  </data>
+  <data name="Payment.AkibaPay.ConfigFieldEmpty" xml:space="preserve">
+    <value>La configuration inline doit fournir un champ &apos;{0}&apos; non vide.</value>
+  </data>
+  <data name="Payment.AkibaPay.ConfigBaseUrlInvalid" xml:space="preserve">
+    <value>Le champ de configuration &apos;akibapay_base_url&apos; doit être une URL absolue valide.</value>
+  </data>
+
+	<data name="Payment.Easypay.InitiateMethodNotImplemented" xml:space="preserve">
+    <value>L&apos;initiation côté serveur Easypay n&apos;est pas implémentée pour le mode de paiement &apos;{0}&apos;.</value>
+  </data>
+	<data name="Payment.Easypay.FromNumberRequired" xml:space="preserve">
+    <value>FromNumber est requis pour le dépôt client Easypay. Indiquez-le dans le corps de la requête init-topup.</value>
+  </data>
+	<data name="Payment.Easypay.FromNumberInvalid" xml:space="preserve">
+    <value>FromNumber doit être au format +243XXXXXXXXX (9 chiffres après +243).</value>
+  </data>
+	<data name="Payment.Easypay.PaymentRefRequired" xml:space="preserve">
+    <value>La référence de paiement est requise pour le dépôt client Easypay.</value>
+  </data>
+	<data name="Payment.Easypay.InitiateHttpFailed" xml:space="preserve">
+    <value>Échec de l&apos;initiation Easypay. HTTP {0}. {1}</value>
+  </data>
+	<data name="Payment.Easypay.ManagementCredentialsNotConfigured" xml:space="preserve">
+    <value>Les identifiants de l&apos;API de gestion Easypay ne sont pas configurés.</value>
+  </data>
+	<data name="Payment.Easypay.StatusLookupPaymentRefRequired" xml:space="preserve">
+    <value>La référence de paiement est requise pour la consultation du statut de transaction Easypay.</value>
+  </data>
+	<data name="Payment.Easypay.ManagementLoginHttpFailed" xml:space="preserve">
+    <value>Échec de la connexion à l&apos;API de gestion Easypay. HTTP {0}.</value>
+  </data>
+	<data name="Payment.Easypay.ManagementLoginParseFailed" xml:space="preserve">
+    <value>Impossible d&apos;analyser la réponse de connexion à l&apos;API de gestion Easypay.</value>
+  </data>
+	<data name="Payment.Easypay.StatusHttpFailed" xml:space="preserve">
+    <value>Échec de la requête de statut de transaction Easypay. HTTP {0}.</value>
+  </data>
+	<data name="Payment.Easypay.StatusParseFailed" xml:space="preserve">
+    <value>Impossible d&apos;analyser la réponse de statut de transaction Easypay.</value>
+  </data>
+	<data name="Payment.Easypay.StatusCheckUnexpectedError" xml:space="preserve">
+    <value>Une erreur s&apos;est produite lors de la vérification du statut de transaction Easypay.</value>
+  </data>
+	<data name="Payment.Easypay.StatusReferenceNotFound" xml:space="preserve">
+    <value>Le paiement n&apos;a pas pu être effectué. Veuillez réessayer.</value>
+  </data>
+	<data name="Payment.Easypay.ConfigMissingOnMethod" xml:space="preserve">
+    <value>Le mode de paiement &apos;{0}&apos; n&apos;a pas de configuration.</value>
+  </data>
+	<data name="Payment.Easypay.ConfigFieldsMissing" xml:space="preserve">
+    <value>La configuration inline doit inclure un objet &apos;fields&apos;.</value>
+  </data>
+	<data name="Payment.Easypay.ConfigFieldEmpty" xml:space="preserve">
+    <value>La configuration inline doit fournir un champ &apos;{0}&apos; non vide.</value>
+  </data>
+	<data name="Payment.Easypay.ConfigBaseUrlInvalid" xml:space="preserve">
+    <value>Le champ de configuration &apos;easypay_base_url&apos; doit être une URL absolue valide.</value>
+  </data>
+  <data name="Payment.Easypay.CardCurrencyUnsupported" xml:space="preserve">
+    <value>Les paiements par carte EasyPay prennent uniquement en charge l&apos;USD et le CDF.</value>
+  </data>
+  <data name="Payment.Easypay.CardAmountInvalid" xml:space="preserve">
+    <value>Les montants des paiements par carte EasyPay acceptent au maximum {0} décimales.</value>
+  </data>
+  <data name="Payment.Easypay.CardEmailRequired" xml:space="preserve">
+    <value>L&apos;adresse e-mail est requise lorsqu&apos;EasyPay doit envoyer le lien de paiement par carte.</value>
+  </data>
+  <data name="Payment.Easypay.CardReturnUrlInvalid" xml:space="preserve">
+    <value>Le paramètre returnUrl d&apos;EasyPay doit être une URL HTTPS publique.</value>
+  </data>
+	
+  <data name="Payment.Afrimony.InitiateMethodNotImplemented" xml:space="preserve">
+    <value>L&apos;initiation côté serveur Afrimony n&apos;est pas implémentée pour le mode de paiement &apos;{0}&apos;.</value>
+  </data>
+  <data name="Payment.Afrimony.FromNumberRequired" xml:space="preserve">
+    <value>FromNumber est requis pour le paiement marchand Afrimony. Indiquez-le dans le corps de la requête init-topup.</value>
+  </data>
+  <data name="Payment.Afrimony.FromNumberInvalid" xml:space="preserve">
+    <value>FromNumber est invalide.</value>
+  </data>
+  <data name="Payment.Afrimony.FromNumberPrefixNotSupported" xml:space="preserve">
+    <value>Le préfixe du numéro de téléphone n'est pas pris en charge par Afrimony. Seuls les numéros Africell (090/091) sont acceptés.</value>
+  </data>
+  <data name="Payment.Afrimony.PaymentRefRequired" xml:space="preserve">
+    <value>La référence de paiement est requise pour le paiement marchand Afrimony.</value>
+  </data>
+  <data name="Payment.Afrimony.InitiateHttpFailed" xml:space="preserve">
+    <value>Échec de l&apos;initiation Afrimony. HTTP {0}. {1}</value>
+  </data>
+  <data name="Payment.Afrimony.OAuthCredentialsNotConfigured" xml:space="preserve">
+    <value>Les identifiants OAuth Afrimony ne sont pas configurés.</value>
+  </data>
+  <data name="Payment.Afrimony.StatusLookupPaymentRefRequired" xml:space="preserve">
+    <value>La référence de paiement est requise pour la consultation Afrimony.</value>
+  </data>
+  <data name="Payment.Afrimony.OAuthServiceUnavailable" xml:space="preserve">
+    <value>Un problème temporaire est survenu avec l'opérateur télécom. Veuillez réessayer plus tard.</value>
+  </data>
+  <data name="Payment.Afrimony.OAuthHttpFailed" xml:space="preserve">
+    <value>Échec de la demande de jeton OAuth Afrimony. HTTP {0}.</value>
+  </data>
+  <data name="Payment.Afrimony.OAuthParseFailed" xml:space="preserve">
+    <value>Échec de l&apos;analyse de la réponse OAuth Afrimony.</value>
+  </data>
+  <data name="Payment.Afrimony.StatusHttpFailed" xml:space="preserve">
+    <value>Échec de la consultation de transaction Afrimony. HTTP {0}.</value>
+  </data>
+  <data name="Payment.Afrimony.StatusParseFailed" xml:space="preserve">
+    <value>Échec de l&apos;analyse de la réponse de consultation Afrimony.</value>
+  </data>
+  <data name="Payment.Afrimony.StatusCheckUnexpectedError" xml:space="preserve">
+    <value>Une erreur s&apos;est produite lors de la vérification du statut de transaction Afrimony.</value>
+  </data>
+  <data name="Payment.Afrimony.StatusNotFoundFailed" xml:space="preserve">
+    <value>Le paiement n&apos;a pas pu être effectué. Veuillez réessayer.</value>
+  </data>
+  <data name="Payment.Afrimony.ConfigMissingOnMethod" xml:space="preserve">
+    <value>Le mode de paiement &apos;{0}&apos; n&apos;a aucune configuration.</value>
+  </data>
+  <data name="Payment.Afrimony.ConfigFieldEmpty" xml:space="preserve">
+    <value>La configuration doit fournir un champ &apos;{0}&apos; non vide.</value>
+  </data>
+  <data name="Payment.Afrimony.ConfigBaseUrlInvalid" xml:space="preserve">
+    <value>Le champ de configuration &apos;afrimony_base_url&apos; doit être une URL absolue valide.</value>
+  </data>
+  <data name="Payment.Afrimony.ConfigOAuthUrlInvalid" xml:space="preserve">
+    <value>Le champ de configuration &apos;oauth_url&apos; doit être une URL absolue valide.</value>
+  </data>
+  <data name="Payment.Afrimony.CurrencyUnsupported" xml:space="preserve">
+    <value>La devise &apos;{0}&apos; n&apos;est pas prise en charge par Afrimony (utilisez USD ou CDF).</value>
+  </data>
+
+  <data name="Payment.DefaultPaymentMethod.NotConfigured" xml:space="preserve">
+    <value>Le moyen de paiement par défaut n&apos;est pas configuré.</value>
+  </data>
+  <data name="Payment.DefaultPaymentMethod.InvalidConfig" xml:space="preserve">
+    <value>La configuration du moyen de paiement par défaut est invalide.</value>
+  </data>
+  <data name="Payment.MethodCodes.BothOrNeitherRequired" xml:space="preserve">
+    <value>Le code prestataire de paiement et le code moyen de paiement doivent être tous les deux fournis, ou tous les deux omis pour utiliser le moyen de paiement par défaut.</value>
+  </data>
+  <data name="Payment.Method.CurrencyNotConfigured" xml:space="preserve">
+    <value>La devise n&apos;est pas configurée pour le moyen de paiement {0}.</value>
+  </data>
+  <data name="Payment.Amount.OutsideMethodLimits" xml:space="preserve">
+    <value>Le montant {0} est hors des limites autorisées pour la devise {1} et le moyen de paiement {2}.</value>
+  </data>
+  <data name="Payment.Psp.ConnectorMissing" xml:space="preserve">
+    <value>Le connecteur du fournisseur de paiement n&apos;est pas enregistré pour &apos;{0}&apos;.</value>
+  </data>
+  <data name="Payment.BillingService.OrPartnerInactive" xml:space="preserve">
+    <value>Le service de facturation &apos;{0}&apos; ou son partenaire est inactif.</value>
+  </data>
+  <data name="Payment.BillingService.CurrencyNotConfigured" xml:space="preserve">
+    <value>La devise n&apos;est pas configurée pour le service de facturation {0}.</value>
+  </data>
+  <data name="Payment.Amount.OutsideBillingServiceLimits" xml:space="preserve">
+    <value>Le montant {0} est hors des limites autorisées pour la devise {1} et le service {2}.</value>
+  </data>
+  <data name="Payment.Billing.EligibilityNotMet" xml:space="preserve">
+    <value>Le service de facturation &apos;{0}&apos; n&apos;est pas éligible pour le montant {1} et la devise {2}. Motif : {3}</value>
+  </data>
+  <data name="Payment.Invoice.CurrencyNotConfigured" xml:space="preserve">
+    <value>La devise de la facture n&apos;est pas configurée.</value>
+  </data>
+  <data name="Payment.Invoice.BillingServiceMissing" xml:space="preserve">
+    <value>Aucun service de facturation n&apos;a été trouvé pour la facture sélectionnée.</value>
+  </data>
+  <data name="Payment.BillingServiceCurrency.Inactive" xml:space="preserve">
+    <value>La devise du service de facturation n&apos;est pas configurée ou est inactive.</value>
+  </data>
+  <data name="Payment.Biller.ConnectorNotConfigured" xml:space="preserve">
+    <value>Le connecteur du facturier n&apos;est pas configuré pour &apos;{0}&apos;.</value>
+  </data>
+  <data name="Payment.Invoice.OngoingPayment" xml:space="preserve">
+    <value>Un paiement est déjà en cours pour la facture &apos;{0}&apos;.</value>
+  </data>
+  <data name="Payment.Meter.ReserveExceedsAvailable" xml:space="preserve">
+    <value>Impossible de réserver le montant {0} pour le compteur {1}.</value>
+  </data>
+  <data name="Payment.Meter.OngoingPayment" xml:space="preserve">
+    <value>Un paiement est déjà en cours pour ce compteur &apos;{0}&apos;.</value>
+  </data>
+  <data name="Payment.Quartz.JobNotRegistered" xml:space="preserve">
+    <value>Tâche d&apos;arrière-plan non enregistrée : {0} / {1}.</value>
+  </data>
+  <data name="Payment.CreateArtifacts.ControlReservationFailed" xml:space="preserve">
+    <value>Échec de la réservation des contrôles de paiement. Motif : {0}</value>
+  </data>
+  <data name="Payment.Order.DescriptionVia" xml:space="preserve">
+    <value>Paiement via {0}</value>
+  </data>
+  <data name="Payment.Print.CurrencyNotOnMethod" xml:space="preserve">
+    <value>La devise {0} n&apos;est pas configurée pour le moyen de paiement {1}.</value>
+  </data>
+  <data name="Billing.Apply.PaymentNull" xml:space="preserve">
+    <value>Aucun paiement n&apos;a été fourni pour l&apos;étape d&apos;application.</value>
+  </data>
+  <data name="Biller.Connector.EligibleByDefault" xml:space="preserve">
+    <value>Éligible par défaut.</value>
+  </data>
+  <data name="Payment.Psp.PaymentNotEligible" xml:space="preserve">
+    <value>Le paiement n&apos;est pas éligible pour ce fournisseur de service de paiement.</value>
+  </data>
+  <data name="Payment.Psp.InitTransactionCreateFailed" xml:space="preserve">
+    <value>Échec de la création de la transaction pour l&apos;initiation. Id de paiement : {0}.</value>
+  </data>
+  <data name="SnelBiller.AreaNotSupported" xml:space="preserve">
+    <value>La zone SNEL &apos;{0}&apos; n&apos;est pas prise en charge. Seule &apos;{1}&apos; est configurée.</value>
+  </data>
+  <data name="SnelBiller.Reglement.IdeMissing" xml:space="preserve">
+    <value>Le pointage SNEL n&apos;a pas renvoyé IDE_REGLEMENT pour le journal &apos;{0}&apos; et l&apos;article &apos;{1}&apos;.</value>
+  </data>
+  <data name="SnelBiller.Reglement.IdeEmpty" xml:space="preserve">
+    <value>Le pointage SNEL a renvoyé un IDE_REGLEMENT vide pour le journal &apos;{0}&apos;, le POS &apos;{1}&apos; et l&apos;article &apos;{2}&apos;.</value>
+  </data>
+  <data name="SnelBiller.Reglement.DuplicateItem" xml:space="preserve">
+    <value>Le pointage SNEL a renvoyé un numéro d&apos;article en double &apos;{0}&apos; pour le journal &apos;{1}&apos; et le POS &apos;{2}&apos;.</value>
+  </data>
+  <data name="SnelBiller.Reglement.RowCountMismatch" xml:space="preserve">
+    <value>Le pointage SNEL a renvoyé {0} ligne(s) pour le journal &apos;{1}&apos;, POS &apos;{2}&apos;, plage d&apos;articles {3}-{4} ; attendu {5}.</value>
+  </data>
+  <data name="SnelBiller.BillingRef.Invalid" xml:space="preserve">
+    <value>La référence de facturation SNEL &apos;{0}&apos; est invalide. Format attendu : &apos;CODE_ZONE-identifiantClient&apos;.</value>
+  </data>
+  <data name="SnelBiller.BillingRef.AreaEmpty" xml:space="preserve">
+    <value>La référence de facturation SNEL &apos;{0}&apos; est invalide. Un code de zone est requis avant le séparateur.</value>
+  </data>
+  <data name="SnelBiller.AreaJournalLocked" xml:space="preserve">
+    <value>Le journal de la zone SNEL '{0}' est verrouillé, le paiement sera appliqué ultérieurement.</value>
+  </data>
+  <data name="MeterRecharge.ExistenceCheckFailed" xml:space="preserve">
+    <value>Impossible de vérifier le compteur ou l&apos;abonnement pour la référence &apos;{0}&apos; (échec interne).</value>
+  </data>
+  <data name="Payment.NotApplicable" xml:space="preserve">
+    <value>Cette opération n&apos;est pas applicable au paiement &apos;{0}&apos;. Seuls les paiements sortants (facture ou compteur) sont pris en charge pour l&apos;application.</value>
+  </data>
+  <data name="BillerCustom.Actions.Unknown" xml:space="preserve">
+    <value>Action personnalisée inconnue : &apos;{0}&apos;.</value>
+  </data>
+  <data name="BillerCustom.Actions.Error" xml:space="preserve">
+    <value>L&apos;action personnalisée &apos;{0}&apos; n&apos;a pas pu être exécutée.</value>
+  </data>
+  <data name="BillerCustom.SNEL.LastTransactionStatus" xml:space="preserve">
+    <value>Dernier statut de transaction</value>
+  </data>
+  <data name="BillerCustom.SNEL.ListTransactions" xml:space="preserve">
+    <value>Lister les transactions</value>
+  </data>
+  <data name="BillerCustom.SNEL.Reprint" xml:space="preserve">
+    <value>Réimprimer</value>
+  </data>
+  <data name="BillerCustom.SNEL.CountOfTransactionsToList" xml:space="preserve">
+    <value>Nombre de transactions à lister</value>
+  </data>
+  <data name="BillerCustom.SNEL.ReceiptNo" xml:space="preserve">
+    <value>Numéro de reçu</value>
+  </data>
+  <data name="BillerCustom.SNEL.TransactionId" xml:space="preserve">
+    <value>Identifiant de transaction</value>
+  </data>
+  <data name="BillerCustom.SNEL.TransactionStatus" xml:space="preserve">
+    <value>Statut de la transaction</value>
+  </data>
+  <data name="BillerCustom.SNEL.TransactionReceiptNo" xml:space="preserve">
+    <value>Numéro de reçu</value>
+  </data>
+  <data name="BillerCustom.SNEL.TransactionAmount" xml:space="preserve">
+    <value>Montant</value>
+  </data>
+  <data name="BillerCustom.SNEL.ReceiptNumber" xml:space="preserve">
+    <value>Numéro de reçu</value>
+  </data>
+  <data name="BillerCustom.SNEL.Tokens" xml:space="preserve">
+    <value>Jetons</value>
+  </data>
+  <data name="BillerCustom.SNEL.LastNTransactions" xml:space="preserve">
+    <value>Les {0} dernières transactions</value>
+  </data>
+
+  <data name="Journal.PaymentVoucher.CreateSuccess" xml:space="preserve">
+    <value>Le journal du paiement a été créé avec succès.</value>
+  </data>
+  <data name="Journal.ReceiptVoucher.CreateSuccess" xml:space="preserve">
+    <value>Le journal du reçu a été créé avec succès.</value>
+  </data>
+  <data name="Journal.CreditNote.CreateSuccess" xml:space="preserve">
+    <value>La note de crédit a été créée avec succès.</value>
+  </data>
+  <data name="Journal.DebitNote.CreateSuccess" xml:space="preserve">
+    <value>La note de débit a été créée avec succès.</value>
+  </data>
+  <data name="Journal.ManualJournal.CreateSuccess" xml:space="preserve">
+    <value>Le journal manuel a été créé avec succès.</value>
+  </data>
+  <data name="Journal.OpenBalance" xml:space="preserve">
+    <value>Solde ouvert</value>
+  </data>
+  <data name="CloudToken.CreateSuccess" xml:space="preserve">
+    <value>Le token cloud de messagerie a été enregistré avec succès.</value>
+  </data>
+
+  <data name="Customer.Create.Success" xml:space="preserve">
+    <value>Le client a été créé avec succès.</value>
+  </data>
+  <data name="CustomerFavorites.Create.Success" xml:space="preserve">
+    <value>Le favori du client a été créé avec succès.</value>
+  </data>
+  <data name="CustomerSubscription.Create.Success" xml:space="preserve">
+    <value>L&apos;abonnement client a été créé avec succès.</value>
+  </data>
+
+  <data name="Billing.Service.Create.Success" xml:space="preserve">
+    <value>Le service de facturation a été créé avec succès.</value>
+  </data>
+
+  <data name="User.Create.Success" xml:space="preserve">
+    <value>L&apos;utilisateur a été créé avec succès.</value>
+  </data>
+
+  <data name="Account.Order.ReorderedSuccessfully" xml:space="preserve">
+    <value>La commande des comptes a été mise à jour avec succès.</value>
+  </data>
+
+  <data name="Auth.PasswordUpdatedSuccessfully" xml:space="preserve">
+    <value>Mot de passe mis à jour avec succès.</value>
+  </data>
+
+  <data name="Auth.MobileUpdatedSuccessfully" xml:space="preserve">
+    <value>Numéro de téléphone mis à jour avec succès.</value>
+  </data>
+
+  <data name="Customer.ProfileUpdatedSuccessfully" xml:space="preserve">
+    <value>Le profil client a été mis à jour avec succès.</value>
+  </data>
+
+  <data name="OtpChallenge.Generated.Success" xml:space="preserve">
+    <value>OTP généré et envoyé avec succès.</value>
+  </data>
+
+  <data name="Customer.Update.Success" xml:space="preserve">
+    <value>Client mis à jour avec succès.</value>
+  </data>
+
+  <data name="Customer.Status.Update.Success" xml:space="preserve">
+    <value>Statut du client mis à jour avec succès.</value>
+  </data>
+
+  <data name="CustomerFavorites.Favorite.Set.Success" xml:space="preserve">
+    <value>Favori client défini avec succès.</value>
+  </data>
+  <data name="CustomerFavorites.Favorite.AlreadySet.Success" xml:space="preserve">
+    <value>Le favori client est déjà défini.</value>
+  </data>
+  <data name="CustomerFavorites.Favorite.Unset.Success" xml:space="preserve">
+    <value>Favori client supprimé avec succès.</value>
+  </data>
+  <data name="CustomerFavorites.Favorite.AlreadyUnset.Success" xml:space="preserve">
+    <value>Le favori client n&apos;était pas défini.</value>
+  </data>
+
+  <data name="CustomerSubscription.Update.Success" xml:space="preserve">
+    <value>Abonnement client mis à jour avec succès.</value>
+  </data>
+
+  <data name="Billing.Service.Update.Success" xml:space="preserve">
+    <value>Service de facturation mis à jour avec succès.</value>
+  </data>
+
+  <data name="User.Update.Success" xml:space="preserve">
+    <value>Utilisateur mis à jour avec succès.</value>
+  </data>
+
+  <data name="Auth.Delete.Success" xml:space="preserve">
+    <value>Compte supprimé avec succès.</value>
+  </data>
+
+  <data name="CloudToken.Delete.Success" xml:space="preserve">
+    <value>Le token cloud de messagerie a été supprimé avec succès.</value>
+  </data>
+
+  <data name="CustomerSubscription.Delete.Success" xml:space="preserve">
+    <value>Abonnement client supprimé avec succès.</value>
+  </data>
+
+  <data name="User.Delete.Success" xml:space="preserve">
+    <value>Utilisateur supprimé avec succès.</value>
+  </data>
+  <data name="User.Delete.BlockedByReferences" xml:space="preserve">
+    <value>Impossible de supprimer l'utilisateur car il est référencé par l'historique d'inscription client.</value>
+  </data>
+  <data name="Invoice.Status.Draft" xml:space="preserve">
+    <value>brouillon</value>
+  </data>
+	<data name="Invoice.Status.Issued" xml:space="preserve">
+    <value>Émis</value>
+  </data>
+	<data name="Invoice.Status.PartiallyPaid" xml:space="preserve">
+    <value>Partiellement payé</value>
+  </data>
+	<data name="Invoice.Status.Paid" xml:space="preserve">
+    <value>Payé</value>
+  </data>
+	<data name="Invoice.Status.Overdue" xml:space="preserve">
+    <value>En retard</value>
+  </data>
+	<data name="Invoice.Status.Cancelled" xml:space="preserve">
+    <value>Annulé</value>
+  </data>
+	<data name="Payment.Status.Pending" xml:space="preserve">
+    <value>En attente</value>
+  </data>
+	<data name="Payment.Status.Processing" xml:space="preserve">
+    <value>Traitement</value>
+  </data>
+	<data name="Payment.Status.Completed" xml:space="preserve">
+    <value>Complété</value>
+  </data>
+	<data name="Payment.Status.Failed" xml:space="preserve">
+    <value>Échoué</value>
+  </data>
+	<data name="Payment.Status.Cancelled" xml:space="preserve">
+    <value>Annulé</value>
+  </data>
+	<data name="Payment.Status.Expired" xml:space="preserve">
+    <value>Expiré</value>
+  </data>
+</root>
